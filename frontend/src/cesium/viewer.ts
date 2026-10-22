@@ -22,8 +22,8 @@ export function createViewer(container: HTMLElement): ViewerHandle {
     selectionIndicator: false,
   });
   viewer.scene.globe.baseColor = Color.DARKSLATEGRAY;
-  // Fine-grained native zoom: smaller wheel steps and less motion after release.
-  viewer.scene.screenSpaceCameraController.zoomFactor = 1.0;
+  // User-adjustable native zoom with reduced motion after release.
+  viewer.scene.screenSpaceCameraController.zoomFactor = 10.0;
   viewer.scene.screenSpaceCameraController.inertiaZoom = 0.2;
   let zoomControl: ReturnType<typeof attachZoomControl>;
   try {

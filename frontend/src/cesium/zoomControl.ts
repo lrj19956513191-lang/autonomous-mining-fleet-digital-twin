@@ -9,24 +9,24 @@ export function attachZoomControl(container: HTMLElement, onChange: (value: numb
   const caption = doc.createElement('span');
   caption.textContent = 'Zoom sensitivity';
   const output = doc.createElement('output');
-  output.textContent = '1.00×';
+  output.textContent = '10.00×';
   output.setAttribute('aria-hidden', 'true');
   const input = doc.createElement('input');
   input.type = 'range';
   input.min = '0.25';
-  input.max = '2';
+  input.max = '10';
   input.step = '0.25';
-  input.value = '1';
+  input.value = '10';
   input.setAttribute('aria-label', 'Zoom sensitivity');
-  input.setAttribute('aria-valuetext', '1.00×');
+  input.setAttribute('aria-valuetext', '10.00×');
   const hint = doc.createElement('span');
   hint.className = 'zoom-hint';
   hint.textContent = 'Slower  ←  →  Faster';
-  let disposed = false, value = 1, listenerRemoved = false, elementRemoved = false;
+  let disposed = false, value = 10, listenerRemoved = false, elementRemoved = false;
   const change = () => {
     if (disposed) return;
     const next = Number(input.value);
-    if (!Number.isFinite(next) || next < 0.25 || next > 2 || !Number.isInteger(next * 4)) {
+    if (!Number.isFinite(next) || next < 0.25 || next > 10 || !Number.isInteger(next * 4)) {
       input.value = String(value);
       return;
     }

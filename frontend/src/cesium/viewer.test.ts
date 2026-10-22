@@ -148,10 +148,10 @@ test('destroying one of two live handles does not destroy the other Viewer', () 
   expect(secondViewer.destroy).toHaveBeenCalledTimes(1);
 });
 
-test('uses fine-grained native zoom with reduced coasting in every Viewer', () => {
+test('uses the requested default zoom rate with reduced coasting in every Viewer', () => {
   const controller = fakeViewer.scene.screenSpaceCameraController;
   const handle = createViewer(container);
-  expect(controller.zoomFactor).toBe(1);
+  expect(controller.zoomFactor).toBe(10);
   expect(controller.inertiaZoom).toBe(0.2);
   expect(handle.viewer.scene.screenSpaceCameraController).toBe(controller);
   expect(fakeViewer.destroy).not.toHaveBeenCalled();
