@@ -85,30 +85,43 @@ export function FleetPanel({ model, controls }: { model: FleetViewModel; control
   const selected = vehicles.find(vehicle => vehicle.vehicle_id === model.selectedVehicleId);
   const online = model.currentConnectionConfirmed && model.connectionState === 'LIVE' ? vehicles.length : 0;
   return <section className="fleet-panel" aria-label="Fleet monitoring">
-    <p>Total: {model.snapshot ? vehicles.length : 'unconfirmed'} · Online: {online}</p>
-    <p>Selected: {model.selectedVehicleId ?? 'none'} · Tracked: {model.trackedVehicleId ?? 'none'}</p>
-    {model.dataStale && <p role="status">Last received data is stale</p>}
-    <div className="fleet-controls">
-      <button disabled={!selected} onClick={() => controls?.locateSelected()}>Locate selected</button>
-      <button disabled={!selected || !model.currentConnectionConfirmed || model.connectionState !== 'LIVE'}
-        onClick={() => controls?.trackSelected()}>Track selected</button>
-      <button disabled={!model.trackedVehicleId} onClick={() => controls?.stopTracking()}>Stop tracking</button>
-      <button disabled={!selected} onClick={() => controls?.select(null)}>Clear selection</button>
+    <div className="panel-heading"><span className="eyebrow">LIVE OPERATIONS</span><h2>Fleet monitoring</h2><p className="muted">Three vehicles. One shared simulation.</p></div>
+    <div className="summary-grid">
+      <div className="metric-card"><span className="metric-label">Fleet inventory</span><p>{`Total: ${model.snapshot ? vehicles.length : 'unconfirmed'}`}</p></div>
+      <div className="metric-card"><span className="metric-label">Confirmed stream</span><p>{`Online: ${online}`}</p></div>
     </div>
-    <div className="fleet-information">
-      <ul aria-label="Vehicles">{vehicles.map(vehicle => <li key={vehicle.vehicle_id} data-vehicle-id={vehicle.vehicle_id}>
-        <button aria-pressed={vehicle.vehicle_id === model.selectedVehicleId}
-          onClick={() => controls?.select(vehicle.vehicle_id)}>{vehicle.vehicle_id}</button>
-        {' '}{vehicle.status} · {vehicle.speed} km/h · SOC {vehicle.soc}% · Load: {vehicle.load}
-      </li>)}</ul>
-      <div aria-label="Selected vehicle details">{selected ? <>
-        <p>{selected.vehicle_id}: {selected.status}</p>
-        <p>Speed: {selected.speed} km/h · SOC: {selected.soc}% · Load: {selected.load}</p>
-        <p>Longitude: {selected.longitude} · Latitude: {selected.latitude}</p>
-        <p>Ellipsoid height: {selected.height} m · Heading: {selected.heading}°</p>
-        <p>UTC: {selected.timestamp}</p>
-      </> : <p>No vehicle selected</p>}</div>
-    </div>
+    {model.dataStale && <p className="notice notice-warning" role="status">Last received data is stale</p>}
+    <div className="section-heading"><h3>Vehicles</h3><span className="muted">Select to inspect</span></div>
+    <ul className="vehicle-list" aria-label="Vehicles">{vehicles.map(vehicle => <li key={vehicle.vehicle_id} data-vehicle-id={vehicle.vehicle_id} className={vehicle.vehicle_id === model.selectedVehicleId ? 'vehicle-card is-selected' : 'vehicle-card'}>
+      <div className="vehicle-card-heading"><button className="vehicle-select" aria-pressed={vehicle.vehicle_id === model.selectedVehicleId}
+        onClick={() => controls?.select(vehicle.vehicle_id)}>{vehicle.vehicle_id}</button>
+        <span className="status-badge" data-tone={vehicle.status === 'running' ? 'success' : 'neutral'}>{vehicle.status}</span></div>
+      <div className="telemetry-row" title={`Raw telemetry: ${vehicle.speed} km/h · SOC ${vehicle.soc}% · Load: ${vehicle.load}`}>
+        <span><small>Speed</small><strong>{vehicle.speed.toFixed(1)} <span className="unit">km/h</span></strong></span>
+        <span><small>SOC</small><strong>{vehicle.soc.toFixed(1)}%</strong></span>
+        <span><small>Load</small><strong>{vehicle.load}</strong></span>
+      </div>
+      <meter className="soc-meter" aria-label={`${vehicle.vehicle_id} SOC`} min={0} max={100} value={vehicle.soc}>{vehicle.soc.toFixed(1)}%</meter>
+    </li>)}</ul>
+    {!vehicles.length && <p className="empty-state">Waiting for the first confirmed fleet snapshot.</p>}
+    <section className="detail-card" aria-label="Selected vehicle details">
+      <div className="section-heading"><h3>Vehicle inspection</h3><span className="status-badge" data-tone="accent">DETAILS</span></div>
+      <p className="identity-line">{`Selected: ${model.selectedVehicleId ?? 'none'}`}</p>
+      <p className="identity-line muted">{`Tracked: ${model.trackedVehicleId ?? 'none'}`}</p>
+      <div className="fleet-controls control-grid">
+        <button className="primary-button" disabled={!selected} onClick={() => controls?.locateSelected()}>Locate selected</button>
+        <button disabled={!selected || !model.currentConnectionConfirmed || model.connectionState !== 'LIVE'} onClick={() => controls?.trackSelected()}>Track selected</button>
+        <button disabled={!model.trackedVehicleId} onClick={() => controls?.stopTracking()}>Stop tracking</button>
+        <button disabled={!selected} onClick={() => controls?.select(null)}>Clear selection</button>
+      </div>
+      {selected ? <>
+        <p className="detail-title">{selected.vehicle_id}: {selected.status}</p>
+        <p className="detail-reading" title={`Speed: ${selected.speed} km/h · SOC: ${selected.soc}% · Load: ${selected.load}`}>Speed: {selected.speed.toFixed(1)} km/h · SOC: {selected.soc.toFixed(1)}% · Load: {selected.load}</p>
+        <dl className="detail-grid"><div><dt>Longitude</dt><dd>{selected.longitude.toFixed(6)}</dd></div><div><dt>Latitude</dt><dd>{selected.latitude.toFixed(6)}</dd></div>
+          <div><dt>Ellipsoid height</dt><dd title={`Raw height: ${selected.height} m`}>{selected.height.toFixed(1)} m</dd></div><div><dt>Heading</dt><dd title={`Raw heading: ${selected.heading}°`}>{selected.heading.toFixed(1)}°</dd></div></dl>
+        <p className="timestamp">UTC: <time dateTime={selected.timestamp}>{selected.timestamp}</time></p>
+      </> : <p className="empty-state">No vehicle selected</p>}
+    </section>
   </section>;
 }
 
@@ -325,19 +338,32 @@ export default function App() {
     onOpen(){setHistoryOpen(true);hostRef.current?.refreshHistory();},onReturnLive(){setHistoryOpen(false);hostRef.current?.goLive();},
     onSelectSession(id:string){setHistoryOpen(true);hostRef.current?.enterReplay(id);},onRefresh(){hostRef.current?.refreshHistory();},onLoadMore(){hostRef.current?.loadMore();}};
   const browsing=historyOpen||model.mode!=='LIVE';
-  return <main className="app">
-    <header>
-      <h1>Autonomous Mining Fleet Digital Twin</h1>
-      {model.mode==='LIVE'?<>
-        <p>Connection: {model.live.connectionState}</p>
-        <p>Vehicle: {model.live.snapshot?.vehicles.some(v=>v.vehicle_id==='TRUCK_001')?'TRUCK_001':'waiting for TRUCK_001'}</p>
-        <p>Scene: {model.live.sceneState}</p>
-        {model.live.sceneError!==null&&<p role="alert">{model.live.sceneError}</p>}
-        {model.live.renderError!==null&&<p role="alert">{model.live.renderError}</p>}
-      </>:<p>Mode: {model.mode==='REPLAY'?'Historical playback':model.mode}</p>}
-      {!browsing&&<HistoryPanel {...panelProps} open={false}/>}
+  return <main className="app" data-mode={model.mode}>
+    <header className="app-header">
+      <div className="brand"><span className="brand-mark" aria-hidden="true">M</span><div><span className="eyebrow">MINING OPERATIONS CONSOLE</span><h1>Autonomous Mining Fleet Digital Twin</h1></div></div>
+      <nav className="console-navigation" aria-label="Console navigation">
+        {model.mode==='LIVE'?<>
+          <span className="status-badge" data-tone={model.live.connectionState==='LIVE'?'success':model.live.connectionState==='CONNECTING'?'warning':'danger'}>{`Connection: ${model.live.connectionState}`}</span>
+          <span className="status-badge" data-tone={model.live.sceneState==='READY'?'neutral':model.live.sceneState==='ERROR'?'danger':'warning'}>{`Scene: ${model.live.sceneState}`}</span>
+          <span className="sr-only">Vehicle: {model.live.snapshot?.vehicles.some(v=>v.vehicle_id==='TRUCK_001')?'TRUCK_001':'waiting for TRUCK_001'}</span>
+        </>:<span className="status-badge" data-tone={model.mode==='ERROR'?'danger':model.mode==='SWITCHING'?'warning':'accent'}>Mode: {model.mode==='REPLAY'?'Historical playback':model.mode}</span>}
+        {!browsing&&<HistoryPanel {...panelProps} open={false}/>}
+        <span className="prototype-label">PORTFOLIO MVP</span>
+      </nav>
     </header>
-    {browsing?<HistoryPanel {...panelProps} open/>:<FleetPanel model={model.live} controls={hostRef.current}/>}
-    <div id="cesium-container" className="cesium-container" ref={containerRef}/>
+    <details className="workspace-sidebar" aria-label="Fleet workspace" open>
+      <summary>Operations workspace</summary>
+      <div className="sidebar-content">{browsing?<HistoryPanel {...panelProps} open/>:<FleetPanel model={model.live} controls={hostRef.current}/>}</div>
+    </details>
+    <section className="scene-stage" aria-label="Mine digital twin viewport">
+      <div className="scene-meta"><span><i className="signal-dot" aria-hidden="true"/>{model.mode==='LIVE'?'REALTIME SCENE':model.mode==='REPLAY'?'HISTORICAL SCENE':model.mode}</span>
+        <span>{model.mode==='LIVE'?`SEQ ${model.live.snapshot?.sequence??'—'}`:`SEQ ${model.replay?.snapshot?.sequence??'—'}`}</span></div>
+      <div className="scene-alerts">
+        {model.mode==='LIVE'&&model.live.sceneError!==null&&<p className="notice notice-danger" role="alert">{model.live.sceneError}</p>}
+        {model.mode==='LIVE'&&model.live.renderError!==null&&<p className="notice notice-danger" role="alert">{model.live.renderError}</p>}
+      </div>
+      <div id="cesium-container" className="cesium-container" ref={containerRef}/>
+      <footer className="scene-footer"><span>SIMULATED MINE · WGS84 / ELLIPSOID HEIGHT</span><span>{model.mode==='LIVE'?(model.live.renderError?'RENDER ERROR · UPDATES STOPPED':model.live.dataStale?'STALE DATA · UPDATES STOPPED':model.live.connectionState==='LIVE'&&model.live.currentConnectionConfirmed&&model.live.snapshot?'LIVE TELEMETRY':'WAITING FOR CONFIRMED DATA'):'DISCRETE PLAYBACK · NO INTERPOLATION'}</span></footer>
+    </section>
   </main>;
 }
