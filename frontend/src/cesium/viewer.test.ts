@@ -2,10 +2,13 @@ import { beforeEach, expect, test, vi } from 'vitest';
 import { Color, Ellipsoid, EllipsoidTerrainProvider, SceneMode, type Viewer } from 'cesium';
 import { createViewer } from './viewer';
 
+// Keep the DOM widget at its boundary; this suite verifies Viewer ownership.
+vi.mock('./zoomControl', () => ({ attachZoomControl: vi.fn(() => ({ destroy: vi.fn() })) }));
+
 type FakeViewer = {
   destroy: ReturnType<typeof vi.fn<() => void>>;
   isDestroyed: ReturnType<typeof vi.fn<() => boolean>>;
-  scene: { globe: { baseColor: Color } };
+  scene: { globe: { baseColor: Color }; screenSpaceCameraController: { zoomFactor: number; inertiaZoom: number } };
 };
 
 const { ViewerMock } = vi.hoisted(() => ({
@@ -27,7 +30,7 @@ function makeFakeViewer(): FakeViewer {
       destroyed = true;
     }),
     isDestroyed: vi.fn(() => destroyed),
-    scene: { globe: { baseColor: Color.WHITE } },
+    scene: { globe: { baseColor: Color.WHITE }, screenSpaceCameraController: { zoomFactor: 5, inertiaZoom: 0.8 } },
   };
 }
 
@@ -143,4 +146,13 @@ test('destroying one of two live handles does not destroy the other Viewer', () 
   second.destroy();
   expect(firstViewer.destroy).toHaveBeenCalledTimes(1);
   expect(secondViewer.destroy).toHaveBeenCalledTimes(1);
+});
+
+test('uses fine-grained native zoom with reduced coasting in every Viewer', () => {
+  const controller = fakeViewer.scene.screenSpaceCameraController;
+  const handle = createViewer(container);
+  expect(controller.zoomFactor).toBe(1);
+  expect(controller.inertiaZoom).toBe(0.2);
+  expect(handle.viewer.scene.screenSpaceCameraController).toBe(controller);
+  expect(fakeViewer.destroy).not.toHaveBeenCalled();
 });

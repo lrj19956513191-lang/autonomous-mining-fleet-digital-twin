@@ -146,3 +146,11 @@ small, .muted, .field-hint { color: var(--muted); }
   .fleet-panel { padding: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+
+/* This widget belongs to its Viewer and is removed with that Viewer. */
+.cesium-container { position: relative; }
+.zoom-control { position: absolute; z-index: 2; top: 12px; right: 12px; width: 190px; max-width: calc(100% - 24px); padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: rgb(17 28 44 / 94%); box-shadow: 0 4px 16px #0003; }
+.zoom-control label { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 6px; color: var(--text); font-size: 11px; }
+.zoom-control output { color: var(--accent); font-variant-numeric: tabular-nums; }
+.zoom-control input[type="range"] { grid-column: 1 / -1; width: 100%; min-height: 24px; margin: 0; padding: 0; accent-color: var(--accent); cursor: pointer; background: transparent; }
+.zoom-hint { display: block; text-align: center; color: var(--muted); font-size: 9px; letter-spacing: .03em; }
