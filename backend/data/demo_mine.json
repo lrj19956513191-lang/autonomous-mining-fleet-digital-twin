@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "mine_id": "DEMO_MINE",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {"type":"Feature","id":"N1","geometry":{"type":"Point","coordinates":[116.3900,39.9000,50.0]},"properties":{"kind":"road_node","name":"Node 1"}},
+      {"type":"Feature","id":"N2","geometry":{"type":"Point","coordinates":[116.3930,39.8990,52.0]},"properties":{"kind":"road_node","name":"Node 2"}},
+      {"type":"Feature","id":"N3","geometry":{"type":"Point","coordinates":[116.3960,39.9000,54.0]},"properties":{"kind":"road_node","name":"Node 3"}},
+      {"type":"Feature","id":"N4","geometry":{"type":"Point","coordinates":[116.3945,39.9030,56.0]},"properties":{"kind":"road_node","name":"Node 4"}},
+      {"type":"Feature","id":"N5","geometry":{"type":"Point","coordinates":[116.3890,39.9030,53.0]},"properties":{"kind":"road_node","name":"Node 5"}},
+      {"type":"Feature","id":"N6","geometry":{"type":"Point","coordinates":[116.3860,39.9010,51.0]},"properties":{"kind":"road_node","name":"Node 6"}},
+      {"type":"Feature","id":"N7","geometry":{"type":"Point","coordinates":[116.3900,39.9018,52.0]},"properties":{"kind":"road_node","name":"Node 7"}},
+      {"type":"Feature","id":"N8","geometry":{"type":"Point","coordinates":[116.3845,39.8995,50.0]},"properties":{"kind":"road_node","name":"Node 8"}},
+      {"type":"Feature","id":"ROAD_001","geometry":{"type":"LineString","coordinates":[[116.3900,39.9000,50.0],[116.3915,39.8992,51.0],[116.3930,39.8990,52.0]]},"properties":{"kind":"road_edge","name":"Road 1","from_node":"N1","to_node":"N2","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_002","geometry":{"type":"LineString","coordinates":[[116.3930,39.8990,52.0],[116.3950,39.8992,53.0],[116.3960,39.9000,54.0]]},"properties":{"kind":"road_edge","name":"Road 2","from_node":"N2","to_node":"N3","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_003","geometry":{"type":"LineString","coordinates":[[116.3960,39.9000,54.0],[116.3960,39.9015,55.0],[116.3945,39.9030,56.0]]},"properties":{"kind":"road_edge","name":"Road 3","from_node":"N3","to_node":"N4","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_004","geometry":{"type":"LineString","coordinates":[[116.3945,39.9030,56.0],[116.3920,39.9033,54.5],[116.3890,39.9030,53.0]]},"properties":{"kind":"road_edge","name":"Road 4","from_node":"N4","to_node":"N5","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_005","geometry":{"type":"LineString","coordinates":[[116.3890,39.9030,53.0],[116.3870,39.9025,52.0],[116.3860,39.9010,51.0]]},"properties":{"kind":"road_edge","name":"Road 5","from_node":"N5","to_node":"N6","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_006","geometry":{"type":"LineString","coordinates":[[116.3860,39.9010,51.0],[116.3865,39.8998,50.5],[116.3900,39.9000,50.0]]},"properties":{"kind":"road_edge","name":"Road 6","from_node":"N6","to_node":"N1","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_007","geometry":{"type":"LineString","coordinates":[[116.3930,39.8990,52.0],[116.3915,39.9005,52.0],[116.3900,39.9018,52.0]]},"properties":{"kind":"road_edge","name":"Road 7","from_node":"N2","to_node":"N7","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_008","geometry":{"type":"LineString","coordinates":[[116.3900,39.9018,52.0],[116.3895,39.9022,52.5],[116.3890,39.9030,53.0]]},"properties":{"kind":"road_edge","name":"Road 8","from_node":"N7","to_node":"N5","bidirectional":true}},
+      {"type":"Feature","id":"ROAD_009","geometry":{"type":"LineString","coordinates":[[116.3860,39.9010,51.0],[116.3845,39.9005,50.5],[116.3845,39.8995,50.0]]},"properties":{"kind":"road_edge","name":"Road 9","from_node":"N6","to_node":"N8","bidirectional":true}},
+      {"type":"Feature","id":"MINE_BOUNDARY","geometry":{"type":"Polygon","coordinates":[[[116.3830,39.8959,45.0],[116.3970,39.8959,45.0],[116.3970,39.9041,45.0],[116.3830,39.9041,45.0],[116.3830,39.8959,45.0]]]},"properties":{"kind":"mine_boundary","name":"Mine boundary"}},
+      {"type":"Feature","id":"AREA_LOADING","geometry":{"type":"Polygon","coordinates":[[[116.3915,39.8982,45.0],[116.3945,39.8982,45.0],[116.3945,39.8998,45.0],[116.3915,39.8998,45.0],[116.3915,39.8982,45.0]]]},"properties":{"kind":"loading_area","name":"Loading area"}},
+      {"type":"Feature","id":"AREA_DUMPING","geometry":{"type":"Polygon","coordinates":[[[116.3875,39.9022,45.0],[116.3905,39.9022,45.0],[116.3905,39.9038,45.0],[116.3875,39.9038,45.0],[116.3875,39.9022,45.0]]]},"properties":{"kind":"dumping_area","name":"Dumping area"}},
+      {"type":"Feature","id":"AREA_FACILITY","geometry":{"type":"Polygon","coordinates":[[[116.3838,39.8987,45.0],[116.3858,39.8987,45.0],[116.3858,39.9002,45.0],[116.3838,39.9002,45.0],[116.3838,39.8987,45.0]]]},"properties":{"kind":"facility_area","name":"Facility area"}}
+    ]
+  },
+  "preset_route": {
+    "route_id":"ROUTE_001",
+    "segments":[
+      {"edge_id":"ROAD_001","reverse":false},
+      {"edge_id":"ROAD_002","reverse":false},
+      {"edge_id":"ROAD_003","reverse":false},
+      {"edge_id":"ROAD_004","reverse":false},
+      {"edge_id":"ROAD_005","reverse":false},
+      {"edge_id":"ROAD_006","reverse":false}
+    ]
+  }
+}

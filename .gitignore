@@ -1,0 +1,48 @@
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+
+# Runtime databases and sidecars
+.history/
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Private evidence and raw logs
+.superpowers/
+*.log
+*.log.*
+chrome-profile*/
+*.har
+
+# Dependencies and generated files
+node_modules/
+.venv/
+venv/
+env/
+dist/
+build/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+coverage/
+.vite/
+.worktrees/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

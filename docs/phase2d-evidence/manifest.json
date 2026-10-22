@@ -1,0 +1,1890 @@
+{
+  "schema_version": 2,
+  "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+  "export_source_commit": "c345b0e6f10983d0e7713d65be4b9ea6250b80c7",
+  "public_repository_commit": null,
+  "master_baseline": "3c0705a0be0b2cb04f9f37bb1b5ea06d32e6a060",
+  "public_edition_date": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "status": "LOCAL_PUBLIC_SNAPSHOT_PREPARED_NOT_PUBLISHED",
+  "provenance_note": "Runtime source,export source and future public commit are different identities. Old private SHA identifiers are not guaranteed retrievable in this independent public repository.",
+  "upstream_attestations": {
+    "original_manifest_exact_sha256": "1685dbabac4385e2f87303315d8b05a0b1ce3d4bc7e8abe041a92231fa59a310",
+    "original_samples_exact_sha256": "8981533d03d557dbe53da2b6a8d4f082de6246d2d02897607d10f1eaa4048c42",
+    "original_validation_exact_sha256": "b2e889c39f14b964fcae1e9305afa05e21fbd8131db5f7e77983cbf273257617",
+    "archive_sha256": "008f0bc102ffe5bd5530710857d8768e3d45c17bd95dd3a3b70bb1dc9955c435"
+  },
+  "path_base": "public snapshot root",
+  "hash_policy": {
+    "utf8-crlf-to-lf": "Validate UTF8;replace CRLF byte pairs with LF only before measuring bytes/SHA;no JSON reserialization or BOM stripping.",
+    "exact-bytes": "Exact original bytes,including screenshots.",
+    "self": "Manifest intentionally excluded from its own files list. Future actual public Git commit identifies this manifest."
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 542,
+      "sha256": "d6aa8474ebc23de49ff3b0d834b070de6bc0d41693f91314b048ffe2907a52b0",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "public_editorial_document",
+      "export_exact_sha256": "79868209f0c4c09346b9fad8695816de4056669d652d998039dbe4b3f6c5886c",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/data/demo_mine.json",
+      "bytes": 5188,
+      "sha256": "5fa58ea3f7cb9a28b1fc794f97dab0de340cd17d3477568df957556b5a805728",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "701eaad1e3ffde70dc9eff8e98b5188e2d242acfa18b031545f921165801a5c7",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/history/api.py",
+      "bytes": 3505,
+      "sha256": "0c5597c6600939c8eb752f3411f66b5e439e710994f5d058f85d5b9a899bd2cd",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "884ffa92c06380e1d3e5c5df730a78a0ff4ceaa494cd5904225b16870ff35da1",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/history/models.py",
+      "bytes": 9482,
+      "sha256": "14192b20a931bfb558571204c0c68bc9ed0894d0bc3a915c8aea41eda70b52c6",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "2acd9f7e92264bffb01ed29b7a54b812e89fd600d43c1ae3dbb5920a69417318",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/history/queries.py",
+      "bytes": 15834,
+      "sha256": "40dcc66d1597b6ea374b2d653ae87a01dd97c72394b60e61f336b11c43651c84",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "2aff5be454bcb9a7a3a6935fe56d10d2e3a590b7262b1caae680fa9a34c10e6c",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/history/recorder.py",
+      "bytes": 11736,
+      "sha256": "68a042c4c56d582a5dd97094dd76b8769e8a68226878c581452a72c86e795a37",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "773645c0fcaca9cbf43eb3bd7ed57d91d9ed6ddeda817490fb3315068d803a7f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/history/settings.py",
+      "bytes": 1233,
+      "sha256": "f2bcb23e53051a5862c800bc47474913d4d82394eb3c36a54dce5473c324341a",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "6a4dd1b6d0a4201f85d9e134bf376e9032d224630d5fbeb831e4830cddc5ca4f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/history/store.py",
+      "bytes": 14216,
+      "sha256": "bf88ff6ca0ba290245d7855a8d19fd7cb6c0b753ce07f24706ccd4e60e2ed5c6",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "84b8494404126e21e237330201f8d18100c54c94171af838803ba02bd6894e34",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/main.py",
+      "bytes": 4752,
+      "sha256": "926574717a1660d67bb83d03af5244eb77539462a757667f3b362ef890b448c8",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "d39b6be6330cfab247ce6d6a57aed1c8ad25359f60bc4a91a0e73550eaa5557f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/realtime/fleet_updates.py",
+      "bytes": 1681,
+      "sha256": "c1f7a0c4f347d47d2531a992178b71e0de97643f7882209031e420b2c9c98534",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "a4d87f352f7b7dc1ebbfe769628a0c4c75c7d52a5924a0ed7af23f16b4df4f8e",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/realtime/streams.py",
+      "bytes": 6752,
+      "sha256": "5e461e7a64364f1aa54f8ab87a1b141f4a552e6521210008dbff64d56c27dfbb",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "ba8955c9ef7203389eeff2663effb44a7a0adf80e934811facefdec15b23cb0d",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 53,
+      "sha256": "3da6c22c38fde364e9ab63ecc5570e89ec5a57746763a1c43dc2f85c7705be9e",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "1de891714f963e1103510b0c4fb6d2ad54b4e2fa3980165905aa82468f2f079a",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/scene/loader.py",
+      "bytes": 17406,
+      "sha256": "31a4c48a72275b37f89017747757ec9491e9913a60cbdf5a441e94af4bbfa4f7",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "a9c26d349e83cac39d5c5237e01448096aa4f8ee6e1a67ff7b866aff9a9f71f8",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/simulation/fleet.py",
+      "bytes": 10356,
+      "sha256": "c62e40ff54d3fee60e9f0c2dd24618b9a5ee09417e3a436196c9cb3609d12f71",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "1f684070944ef1d33ba7b9a7c44f3774bd874d6fc7ecea6ab02f09081e59e5e1",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/simulation/fleet_config.py",
+      "bytes": 8056,
+      "sha256": "4794704600788a97bed5d3ccc263864c7fab4fdbbe3acb25cd1442b7bfba132f",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "d98888db003d41c4909e21685b136c8e1e7248d9708bb66547b3498eb6090ca7",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/simulation/route_geometry.py",
+      "bytes": 3891,
+      "sha256": "35b8fd99bde72a448025af1b28a439e6a059f96365b149e997ca5bbe67014e5d",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "e6d0d57b24abd3b55e3cc08a78067fb433ef4c428c3b37fb1e70d4cbfe400977",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/simulation/route_motion.py",
+      "bytes": 2019,
+      "sha256": "26fe7caaf21ac0abf21cc345f822d214e063acfa8a0a05498772172318110c46",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "52bb33c2d1fe395b37910af04506f26f44ada531cced5b4c403b0b38e0c3b338",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/conftest.py",
+      "bytes": 826,
+      "sha256": "5a54dd3b6ef8b99727cc7fdd8338d6dde07163c95cb1eb61aeb13e9389ed527f",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "af7e366dbfb1280a12c3d4fa4642285cdbdabe91e377c93205ad35bdb42e5cf3",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_fleet.py",
+      "bytes": 27433,
+      "sha256": "a8c72a90eb8d8806e744829b841d106b4d0e69e02ee6e28ceffcb1c2400736b3",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "cba0ad1e5a38c2e3c3405429b330aa8ebe16d2cc352fb39f062b841e123558da",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_fleet_api.py",
+      "bytes": 8318,
+      "sha256": "faa699a205feff604efb9d7b38b397751c234b6d1fbc050ba5f0ba6c7f0272aa",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "df42026e79d3b48badd9a4cb27b8c66d5d276b129f157f02a0897416d5790d06",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_fleet_config.py",
+      "bytes": 11910,
+      "sha256": "a523c3ed60cad420edb12f23ea5a1de082beb34256540687814e6c04cb6fdc08",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "f5c2e9b33a6e19e49eac8f8a956f41ca17626418ac30d2ba4f21751ed09765a4",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_fleet_websocket.py",
+      "bytes": 11112,
+      "sha256": "96df8640e9e362912936dfaaf3822957b92da50ecac76a2d92939abd18bebce7",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "53011053efe69c76f27f450954507706ce7eac5d9306f95dae6ff4d345eb5fee",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_history_api.py",
+      "bytes": 22223,
+      "sha256": "c58e743fb8f51bf8ab66b3a4b8d034e8d46b33e0fef7f69d6ea1b0bd122aa070",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "7fad9e499e3889595d6f72eca611c0bbc0d2ef5eaa718039c28241d07c414959",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_history_integration.py",
+      "bytes": 23080,
+      "sha256": "0c47cfcfdf0527a99a2c1db8b451574d76ee40b8da39ed0f2dd51ebd605c0c70",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "117d9c3a0de441ce9c53fe485b16a1dafa0639a9c1c9cd98d4adc14817db6161",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_history_recorder.py",
+      "bytes": 26779,
+      "sha256": "6284389a9f4a7ac62207095fbd5c4060c13cc211a4408d647e88c6876abfef05",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "1f8f0613519db39c05a6d2108a9e7323550be964a2624809cb9465bc12ebb3e5",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_history_store.py",
+      "bytes": 22939,
+      "sha256": "d09623615cf5db60db7c56e0474b0ac177bdde8e2a70f63a2154f6be1d2ca532",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "0acd2216fe3eaf4180de765dfd078353c2bc0d5d04c11ce52dde8e1f2fb39ed0",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_route_geometry.py",
+      "bytes": 10391,
+      "sha256": "3061b9b1c42fe1b2c14c348e96f69464440b0a1c04ea7cdad409a2efc0626184",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "80a653ad0a23b2daae762d38d5d1600b2a84d4a1bffd1a5023069a56684a3511",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_route_motion.py",
+      "bytes": 19443,
+      "sha256": "2e624f7a8603046be92d2294e45b25e1b036ec484c149113e512f3788794638e",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "b19f2a443842fbdc8429c3c5f7a3f79c844d6c3b8e67e516003a7ada4dd3416b",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_scene_api.py",
+      "bytes": 16888,
+      "sha256": "cba4ea1cb7ebf7a54120ffa1efb6be47ffa60a11cc52f7a6aecff3675f09f4a5",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "1451494e33451943fba0d3fc15779bc695480331895e8bd326b37ec99ff5aac6",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_scene_loader.py",
+      "bytes": 35860,
+      "sha256": "7a4ecc8db1d13a059adf1811594b913ff4044f933b9166144cb9c0d389567f58",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "f936404726b7c5cbfd3b5afb37b3332e8a2cf024e8e4d83071f0201749fc80ec",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_stream_supervision.py",
+      "bytes": 21459,
+      "sha256": "556ee660b05c6f30cddddf44c574c4dc404d76915477fa9980bf49dcf92c9a7e",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "5653daa55f8a2a87f3b845192f342da45f86e1a9f087d0048058a2228c398cdb",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_vehicle_api.py",
+      "bytes": 4318,
+      "sha256": "3ac18958d9a33f0fbeff5764be8fbf6d64cfe48029342d98b3b211fa55f64ba5",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "73e2132abfec7f5cca99e8faa788c0d9821fe77fe30ba10910aa0dcdca3a219a",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_vehicle_simulator.py",
+      "bytes": 3339,
+      "sha256": "817f6f819ac4523f0cd0a65e05ae4958fcf48947b6f83e5a2bc984f216ce2a56",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "8ec90c80638b84ddea8fc880fe5b8c74604458894b9af4da1d69ef6c7d83c766",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "backend/tests/test_vehicle_websocket.py",
+      "bytes": 6589,
+      "sha256": "7f100dcbb7acd94c330429eaf4a9d6f676f4b02cb8663031c8ab8086c359c7e1",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "975f454ae01d7ae282f2d3e653790efdfee144b9b9e6f371269c43d2149d0649",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "docs/phase2d-evidence/acceptance-samples.json",
+      "bytes": 56901,
+      "sha256": "0c94ba7caf97e42813cccfdd65baa1cdaa99094d8688f04835a8b3531067cc11",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "public_editorial_document",
+      "export_exact_sha256": "8981533d03d557dbe53da2b6a8d4f082de6246d2d02897607d10f1eaa4048c42",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "docs/phase2d-evidence/preview-live-return.png",
+      "bytes": 138911,
+      "sha256": "4a2d69d753f26e16225a51d064c02552ab6177571fb8a51465305736e4095ccc",
+      "hash_mode": "exact-bytes",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "4a2d69d753f26e16225a51d064c02552ab6177571fb8a51465305736e4095ccc",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "docs/phase2d-evidence/preview-live.png",
+      "bytes": 135749,
+      "sha256": "2a71c5382c49e3c3cb3ff84956616f7e6261b31fc09fdd10ae9fa6bedc733545",
+      "hash_mode": "exact-bytes",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "2a71c5382c49e3c3cb3ff84956616f7e6261b31fc09fdd10ae9fa6bedc733545",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "docs/phase2d-evidence/preview-replay.png",
+      "bytes": 153233,
+      "sha256": "7dd6111dbc845172408013e3b9e8210dcc272e0bfce377cb5e696586b235c75f",
+      "hash_mode": "exact-bytes",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "7dd6111dbc845172408013e3b9e8210dcc272e0bfce377cb5e696586b235c75f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "docs/phase2d-validation.txt",
+      "bytes": 10419,
+      "sha256": "fce7c752afef86ad77c3b47116811c348450372b7e2c757091c7e7f440226c67",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "public_editorial_document",
+      "export_exact_sha256": "b2e889c39f14b964fcae1e9305afa05e21fbd8131db5f7e77983cbf273257617",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 323,
+      "sha256": "f2d74a568debb6e18439943760d83aafbb965fe5bcacd0ad2a3122965bc206e7",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "9a5db6bf7a01c273a35f5494b85c37b56ad9da6c629adb9715ffd21d55cbc8e3",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 75150,
+      "sha256": "4f4988b8c90e3d7e20855308601cada4688488fd86ebe2307d35e7e31e334013",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "33474f48c4c45d80ede0849c0b51500532b3c9df5acde4a8a5a0e52f002297ac",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 655,
+      "sha256": "a720b7e7d7674c13c8a47f2b5a1b45b75f4c7ea1f33484648827a33a401cc8c7",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "3ec61d523c8f135b6bf82e17d6edd6130a470b0fa702f83618a3e85240a4df72",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/App.test.ts",
+      "bytes": 62124,
+      "sha256": "8f1f9cfb5779dfce1fcc2d46126efe295791308bd1abdffcd5af6098909c96a4",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "83d27fba6a91c4fdf7671fcf4d4742b3f1db62f0ddc9f7f6f89cfd9c88d3fe4e",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "bytes": 21154,
+      "sha256": "9d8105c9b7ddc677da077cd372402ac1bd6b65fcab7e9a298c112c54d0b754be",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "63460630583b4564fa9002791dcecc104202be90d16288fc8a6fc87455e73c6f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/backendConnection.test.ts",
+      "bytes": 4542,
+      "sha256": "5aa7f12c176ed96b74efcb1731a22e694f91af5129037e1892febb9830013bd1",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "2b764519d2d4cc42fc0dbd69dc4caf30ad8569d3f0e00d6b2057c04fb7e8cb63",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/backendConnection.ts",
+      "bytes": 1948,
+      "sha256": "1428b563632344a519307e2865309d92e7442726640a46de14a0b652005a6d69",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "c4b3d7d6730785c88172cc3c8f137e547cf600786fa6e340fa39722780c6dcea",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/bootstrap.test.tsx",
+      "bytes": 392,
+      "sha256": "d8cad9517d7e959d48adaa77b325a9796b7b01016abb8462810171c3697a8040",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "145c05582b2c8402bcc6181136936e95c0b9675461829c815a73db71af3907ba",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/cesium/camera.test.ts",
+      "bytes": 1404,
+      "sha256": "5d2c8b6460bfb36e3b895d57ca685ac5e79db08b93b539546019158a0b6f222c",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "4f3cf32f1f8285b60b0f15ef23e380f983ba1db7608985915569d9411f66e028",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/cesium/camera.ts",
+      "bytes": 420,
+      "sha256": "735c853d51725669f9e556d9b1449caea7116862311fc14864fd8201cc941465",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "e1142fdec2c00b6cffdf90433aac4a97fa03f393995052f9c82244f718e8fd24",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/cesium/fleetCamera.test.ts",
+      "bytes": 20422,
+      "sha256": "a4f21cbd206dc2479b44d4eb4ae5f20655fa7282dd9aea34c7f2fe39dc6c35a0",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "313557bf0f0f98f109b88e36f5cdb7fedf40a58ee608783ac885123ca6b75bb4",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/cesium/fleetCamera.ts",
+      "bytes": 9222,
+      "sha256": "f3bf5976a964134f6f4c9f00018c1857bc4a3490daa9816c69aeca11cee6edeb",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "957272650a1707db95e5fc93dda167ceb02efeeaffe2a7bffde7c0e6c36a77dc",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/cesium/viewer.test.ts",
+      "bytes": 5344,
+      "sha256": "a3d6022edab4cea044292bf021f860cdb8bf3d5f6e4026fcc005ab180885c3a6",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "c69d64d3da9527e9807539a75b0a9616a0203d5a88ffe8d5e1ed364993d41111",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/cesium/viewer.ts",
+      "bytes": 878,
+      "sha256": "754e775aecf1c76dfd834be482dc19e8a709d0ed980350d07de50cabef50b12a",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "b15f381eee4ed4b54d9ed2957f28d3e3c11b13b0bd849f1182580c12363fbeb4",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/fleetPresentation.test.ts",
+      "bytes": 17647,
+      "sha256": "7d87a6a74c1e077edc17a0cfd1649b42a53616daa9b5a2515188f47913d134c2",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "2fa90134f715f7b631456c4fb401d7f025107cbd35a4fe3c789008267e4a8587",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/fleetPresentation.ts",
+      "bytes": 16416,
+      "sha256": "509588aa5fd26eac93743cac6b22a5c6b5c56fba9695caec9ae45c815da55ef4",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "18930147cce077225ea9da3d4e53c62e37dc32ba106ab4ff219079bd0d4758c6",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/fleetScene.test.ts",
+      "bytes": 49001,
+      "sha256": "5ff0a693dc875a97e6d2be34600118430b84669aef94dd61342f98c54d15c600",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "957c3c98f5ad875ed2904f60903f9c0f30076a5c2abe457e0af03edd220cab62",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/fleetScene.ts",
+      "bytes": 7907,
+      "sha256": "37374dc3bd019f9eb31d7a4657944a16e05b6ecd60e660b48dd19990ac7b7481",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "94c56a2589dfa019b1275c69533ba7ff64430e0692071f2671feecf3f0fce5e2",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/historyClient.test.ts",
+      "bytes": 23241,
+      "sha256": "ddef5d8e4ae58eefc098f19563ff6f0230d14f2619542074a5f2214a999023f2",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "496a9ed6deaf859d46ede9281b8524f14ca1c41a4ce2f199cdc9c718246609d5",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/historyClient.ts",
+      "bytes": 16181,
+      "sha256": "753a0ab627f9d8175f2c71a00fdd3a4d806c347a1e91bfc61596540838eac5ee",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "a5b0ba09ef92e834a20d3f002e53fd18587c92682935e6d79d4183ed86f9ea78",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/HistoryPanel.test.ts",
+      "bytes": 6038,
+      "sha256": "21e212378a75d276654244083fbd9b410305e490f3f4f67955f41d64d6f41d4d",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "16399ecadfc58c9753f9653e7f3ba900b4f6812a6486d0e7bb8ca5f03918321d",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/HistoryPanel.tsx",
+      "bytes": 6477,
+      "sha256": "e4cda3693191bc417b99cfa469e4ddad084dc445c6015e9ce08c23b30b213b8d",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "ec699fca866b56e22e0c3d830154c1310f34a425b979c72a5bb82160b6d619f5",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/playbackClock.test.ts",
+      "bytes": 7611,
+      "sha256": "fa258e145770222ac31db8241bcd76185a8c17f4cafeb0ec7c5c233b68ce76b8",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "1aa256f0f31c1ea2b8faf45e44c9832f64ed6221aaa4cc660bfbe3588064599a",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/playbackClock.ts",
+      "bytes": 3586,
+      "sha256": "80e272aa209608282a00f4d7bf2e2ca60069f1e502082b0f738142fac13707c9",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "bf4e26b8a9df8c387e0ca4e674b03359c6b9393b863e6a946fd7cd9c793593da",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/replayScene.test.ts",
+      "bytes": 27817,
+      "sha256": "8d95d91adef7d5092b4821a21ad9d2b6d7ec22115166a8041d20c4b1e6f62ecd",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "e9293e334c3abd8e68434eae6a7902edbae08c9a4de71af61e1f5605e6f5c61f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/history/replayScene.ts",
+      "bytes": 17156,
+      "sha256": "b84ce8be14482ca62c46d8d3d8f901e4ca796a95e6c37f7178f753df17f85bbe",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "3bf4491e66008e7cd398c730fd732166ce49d69040a06a6b01fd29fb4d7229e1",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "bytes": 282,
+      "sha256": "ce3354ecd5383c4b877b3ad5389ad3981b0dffaed8a3602f45e9eaaddbca4edb",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "aaa46c2de0ff3aa03c80f66ee193d12bfc3fc193e5669739642a621b944aba3f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/fleetFixtures.ts",
+      "bytes": 828,
+      "sha256": "5d4a1d61a331613147ad255b264678616f119f1cb64dfc275455b261cec9b06a",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "77c0e3dcbebf5964ddbcd30b43540b2d206fee795765f96c40eddfae7dca594b",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/fleetSocket.test.ts",
+      "bytes": 17077,
+      "sha256": "c53950f78cc288dcd004a9387321ede35ac9dcadfdd8f26c555a0f0c688c61eb",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "28c2c59d348e40b54ff0580874698590f848931e89018d464aaadc587ac5dcf5",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/fleetSocket.ts",
+      "bytes": 3268,
+      "sha256": "ad9271f71b17f0b19ccdf697a60ae886b58c7e7c3e7718480de3c6db80464d46",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "73702ec47beea971f01487f31c3cffef2011cd4a6996eb4787924adaab400e0f",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/fleetTelemetry.test.ts",
+      "bytes": 12316,
+      "sha256": "a3974ab33a4dd442afa53a871b72b5d286f846328eedccc8096d6fe49369b8a1",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "e6881ae475efb283b657d4b9dfa8e1cd358a131219efa5c86a4a461c62d050a0",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/fleetTelemetry.ts",
+      "bytes": 4139,
+      "sha256": "0a031bf1acb8cebca3ca16bef0b5d173f258d40c2f6777a191305908783cda68",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "c3f688ccf0b8af51fac5a74cf3422378c1f03e91643500fe58bdb508d6357ffb",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/telemetryGuards.ts",
+      "bytes": 1095,
+      "sha256": "a8d7ffdcb3e21635079dc68e0126ea8dfd3f98eb5a8cbdd96827f16baf283b10",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "5c44ec980587c039fb7e9b1bd87d1f3b06c5bfee64e79c894ef30810ea4c7807",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/vehicleSocket.test.ts",
+      "bytes": 9667,
+      "sha256": "eb3793e5e41a26099855488a4d0d3227c73d6abdffd0ff37d4e8baebe009e5e4",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "220629d2db3071add9c3fc22080ff0e20d79123a7dead94478dc076a0462fdc8",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/vehicleSocket.ts",
+      "bytes": 2331,
+      "sha256": "1daf041166d86e50eccd39df79b3ca8388045e21b6200ff5bd7626eef553e2ac",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "a8af96c9f0b87b7ae2093fece30107eb422504f160913c632afd0a8ea46d01ca",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/vehicleTelemetry.test.ts",
+      "bytes": 5895,
+      "sha256": "5a896e8ca534a7c59e7908526e43e6fd2e175d7145c1479dff249643356dfcf7",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "3d7169a166d01fd9374896f99d3dd19df96ba5cc5ad0f891ce77080123d9952b",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/realtime/vehicleTelemetry.ts",
+      "bytes": 1314,
+      "sha256": "62e5161fdfdda64401cccd0fd0818efeaf9040d01cc789df3c1ffd9e808a46f5",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "9e3e5ff2d421acffda63b84632b300a8750715fa68a0683e6a9aaac1aa63c984",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/scene/sceneClient.test.ts",
+      "bytes": 14322,
+      "sha256": "a7cec7590cd7c75d827174be3213ade883dc604e9b3d7b04d813c53e9b5e6d5b",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "9ac1d1f1271864800c27eff4dc1fecadbab5e9fdc8ed6ee3c4a91a0886bbec14",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/scene/sceneClient.ts",
+      "bytes": 11053,
+      "sha256": "530b584ca20ecc85732d5ebef862aa4e6b741cfdd78e582b13fbd93a56c903e8",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "6cd133e690f3ce419b452f5db9367d7ebf01c7d61756de15bb6de685decd756e",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/scene/sceneFixtures.ts",
+      "bytes": 329,
+      "sha256": "c7b132dabbb3569453cc68255600e5730d9d4d96e9ac2119d4829bd835759067",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "e48fec2514d456994f50d69faa1d84f145b99349756a49c68610e1544bc976b3",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/scene/sceneRenderer.test.ts",
+      "bytes": 14833,
+      "sha256": "1017d10c5cf3eead3e75b3b0e36ebee6d2d811098c454c08aa88f227c0815239",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "f9425b68ec4f48be6cbc692660b7e0273fea341480373de4c98c8c52b06ba451",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/scene/sceneRenderer.ts",
+      "bytes": 3584,
+      "sha256": "f7768c049373549465b4364776b635dbf056594229c95992c9303b6092ee32bb",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "b6c5cf6aaaad3201fa68f0e69d0f149d5fab80dba8860b080fdba0957a3bef80",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "bytes": 794,
+      "sha256": "c9e0d9a70bf0e44807882e2a015fa0e4b0516e11e9c04a92a5a77fd0b5250ff0",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "cd8c3449a7be84aa513d548eeb700e2b5eacc8a943c6eafe84bfd09230a12250",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vehicle/fleetEntities.test.ts",
+      "bytes": 35528,
+      "sha256": "581415a0ed512b1b5916b14f9973c4479dccace381701e6bcf1645bc36417062",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "50b69855cc18f8108e9b9e70e895c02b19178bd9c14487b96299d42cbea673b4",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vehicle/fleetEntities.ts",
+      "bytes": 14996,
+      "sha256": "87d5d4768b04a34c1f446c8f2c3ff6847935dda8ea6ea7cf1eb183264e4a71da",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "f0dc90101ec73411a637efd74f58ec300b03c76153f4890afc556887f5966973",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vehicle/fleetInteraction.test.ts",
+      "bytes": 18953,
+      "sha256": "9cec88bdd410594e395de49d841cd7dc8bb7435d402358c7add061b8d9e82933",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "4841b3eaaae20d422cdaa537729d688c891ef73aaf5d90ca0ebcfa5f4fbf75bd",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vehicle/fleetInteraction.ts",
+      "bytes": 6835,
+      "sha256": "23321434ccd7242fb6992cdf8eadc6781c08df063b8b672f707e1fc05f2ab584",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "2dc431e51258a0645df0be416f6bcba300b64007502a42516ef13564c451c20e",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vehicle/vehicleEntity.test.ts",
+      "bytes": 6611,
+      "sha256": "6b9126153d33ce3f80c62f6ab6c316e0a9f45508b0d6e1a3ecf405d0a8acf30a",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "0157a895e6198a8a9923f2617593165740f8963a863cd138eab27279b8275196",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vehicle/vehicleEntity.ts",
+      "bytes": 1089,
+      "sha256": "b798be9262a808276bdf2905641349303d158096bb082b8df502f1ba09b52ef6",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "0b1ce8eeee2152f2d1e6b0b471225275754eb16141a345dc32e2bf55e1b54c22",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/src/viteConfig.test.ts",
+      "bytes": 2778,
+      "sha256": "9a6b8d2f0a3d9448b2af9179fcf554bb74721c9ad9795e1917d4fd18b8b6e052",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "c405b942ff0d45837ad90d32b28f82fa321ac8a37382c70e1b8172a3fcc681f4",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "bytes": 301,
+      "sha256": "1dd641af99b303e227aad0e093e2ae21966828cca7a1cf30474bb28c9c0ec77c",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "3af65b5bedcc0ef0197c84e51e6918adbd4d0fbc007732b63bfdb0cd3c79e410",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "bytes": 1360,
+      "sha256": "0148048ad260c3a5972abd5d18945e0660deac0b0798db36893d7fdc3a80da8d",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "unchanged_export",
+      "export_exact_sha256": "ee4367e2caacb83925c177e0d71717c364908860eb505a7dda55f3236a004e62",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "README.md",
+      "bytes": 8937,
+      "sha256": "3526525a83fe950ddea9f7cdf4bc5a4f75593056dd75da7e0d5805b1598045a8",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "public_editorial_document",
+      "export_exact_sha256": "dc9e1e7f63d383b128c0090f537f2cadf30564fa03cc905f727f5e8407ad6350",
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3115,
+      "sha256": "aa20b21f93c7c18c01356ff44986f3779f5eee4ba264ef0511f4480d493659e1",
+      "hash_mode": "utf8-crlf-to-lf",
+      "content_origin": "public_editorial_document",
+      "export_exact_sha256": null,
+      "runtime_validation": "Historical source only;not rerun during public preparation."
+    }
+  ],
+  "private_archive_records": [
+    {
+      "bytes": 2881,
+      "sha256": "f523483b3d1533cec5d66f853e04c365d9c8abde8c0aa25bff11b2fd34d0cf00",
+      "hash_mode": "exact-bytes",
+      "stage": "B",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "recording",
+        "compatibility",
+        "parking"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-001",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 85851,
+      "sha256": "03c22260c67e6aa2c1ed1871c48a0933f5bd55864ee6a04c9a82fb36b6530dd1",
+      "hash_mode": "exact-bytes",
+      "stage": "B",
+      "evidence_type": "network_jsonl",
+      "acceptance_items": [
+        "same-cycle comparison"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-002",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 80536,
+      "sha256": "ea19d4e7e6319bbbb8eac948e883564135eec957016031466d349327c87017ae",
+      "hash_mode": "exact-bytes",
+      "stage": "B",
+      "evidence_type": "network_jsonl",
+      "acceptance_items": [
+        "same-cycle comparison"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-003",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 25489,
+      "sha256": "92984c47b4b4306080d3bf48675db7fe62471446e32628388c735e8da2fc3c3e",
+      "hash_mode": "exact-bytes",
+      "stage": "B",
+      "evidence_type": "network_jsonl",
+      "acceptance_items": [
+        "same-cycle comparison"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-004",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1896448,
+      "sha256": "0a6ac073d9eba4bea9d86565032d8a8e4c7dfe0dab9f1f9acce49bba46f5ee4d",
+      "hash_mode": "exact-bytes",
+      "stage": "B/C",
+      "evidence_type": "sqlite_database",
+      "acceptance_items": [
+        "persisted snapshots"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-005",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1875,
+      "sha256": "19d0c7a465a0021c7d09a2106fe3a14119cd77c0c1f1c7dd34ea34435c86f017",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "recorded position and road precision"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-006",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 30552,
+      "sha256": "8248bc8c2db7502647d7fbce84cfc9454c6973b459824313327875f7692db7e0",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "buffer freeze and clock rebasing"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-007",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 654327,
+      "sha256": "c0233ae18a8dea09a269c64ef38ee81e6be43b976e6ead90265f9df9db59e36b",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "real hidden/return"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-008",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 48061,
+      "sha256": "0115eecefdef5fb6b5425637cbc2c3e91d141fd1c8bfb4cc093fb42fd43d1522",
+      "hash_mode": "exact-bytes",
+      "stage": "C gap",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "legal independent fixture"
+      ],
+      "controlled_fixture": true,
+      "runtime_classification": "CONTROLLED_TEST_FIXTURE",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-009",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 2263,
+      "sha256": "41f0d6a8b6242134fa3ae722aea376ee23ccb52ac039e88512e0b5f5976d2c72",
+      "hash_mode": "exact-bytes",
+      "stage": "C gap",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "gap and no extrapolation"
+      ],
+      "controlled_fixture": true,
+      "runtime_classification": "CONTROLLED_TEST_FIXTURE",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-010",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 2510,
+      "sha256": "be4062787f86c77a2d58fe0f20c66149849cb421848ac4e50daf47b27d29cf7c",
+      "hash_mode": "exact-bytes",
+      "stage": "D1",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "old9 complete roundtrips",
+        "StrictMode"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-011",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 5258,
+      "sha256": "b368d885e9f0ec214bf3e6c27447c99389c5416f9420f0b9b7b70f29e2619bf3",
+      "hash_mode": "exact-bytes",
+      "stage": "D1 supplement",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "new1 complete roundtrip",
+        "camera"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-012",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 2078,
+      "sha256": "f0943fa8864894fab85ae218f76a5fd00340c4ceb14b9b5478d1070248501f08",
+      "hash_mode": "exact-bytes",
+      "stage": "D1 supplement",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "camera tolerance"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-013",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 10577,
+      "sha256": "47e0f14cec48901bb011545732efd5065486333873ef3f1b54189253732100b6",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "production preview"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-014",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 266,
+      "sha256": "08a0c965f1b078868d8b9bca90bd656e0bccf2d53a9914f6248fceb9ab994193",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "official build"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-015",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 64804,
+      "sha256": "45a0ca91ea6180770cf5b5d1e8ac0b6bf96f3d5dde6f3495166b9426d7713c3a",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "dist_hash_manifest",
+      "acceptance_items": [
+        "build provenance"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-016",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 21824,
+      "sha256": "6dc7763c21d7d872ad5ffe1cf18937df1e402f4c5da80db570cb2e570e03b2f2",
+      "hash_mode": "exact-bytes",
+      "stage": "B",
+      "evidence_type": "runtime_json",
+      "acceptance_items": [
+        "restart",
+        "interrupted",
+        "controlled SQLite failure"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "MIXED_REAL_RUNTIME_AND_CONTROLLED_SQLITE_FAILURE",
+      "git_delivered": false,
+      "contains_controlled_failure_injection": true,
+      "private_evidence_id": "PRIVATE-017",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1178,
+      "sha256": "852727ef7fe88dfd8387af9af5e7eb8b3ef00eb5e83e64c4bb63cf50188cb36c",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "environment",
+      "acceptance_items": [
+        "environment"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-018",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 366,
+      "sha256": "fe016d8f9d5765465d5509f14230c75a0e5b4b4a206955e2cf5ba31d5e73df0f",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "command_result",
+      "acceptance_items": [
+        "command_result"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-019",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 89183,
+      "sha256": "ae00452b223b162785a2ca4436dac1a60c9d15a1c51ec7e57e3d40eb762b3eab",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "test_log",
+      "acceptance_items": [
+        "test_log"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "AUTOMATED_TEST_OR_HISTORICAL_DIAGNOSTIC",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-020",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1175,
+      "sha256": "e72d838702b56eb687ec9ba6ecb9fb662214b2956be53051fbb197bcb4513a65",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "command_result",
+      "acceptance_items": [
+        "command_result"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-021",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 686,
+      "sha256": "b6bd53467b51444188ce2dfc45b197f46592964287f53a84abd37d98f90589f2",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "test_log",
+      "acceptance_items": [
+        "test_log"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "AUTOMATED_TEST_OR_HISTORICAL_DIAGNOSTIC",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-022",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1202,
+      "sha256": "ef6db8bdb5665b697499349695cab406cf47abd2ad44b1932b346b69d9feca71",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "build_log",
+      "acceptance_items": [
+        "build_log"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-023",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 449,
+      "sha256": "cfed48a3da8986715ec72b6295d754a259ee39ffbcae181d9d0cc4572ae7af2c",
+      "hash_mode": "exact-bytes",
+      "stage": "A",
+      "evidence_type": "dependency_log",
+      "acceptance_items": [
+        "dependency_log"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-024",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 513,
+      "sha256": "677068eb9060fdcf86b0a64155e40c79c90c5c9a945799d024e6a3f1bbb29773",
+      "hash_mode": "exact-bytes",
+      "stage": "B",
+      "evidence_type": "status",
+      "acceptance_items": [
+        "status"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-025",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 358,
+      "sha256": "b0be96fccbd623e40b50be6a9c1164f9b4a803840b6eab074d7f190b0da5b70a",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "browser_result",
+      "acceptance_items": [
+        "browser_result"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-026",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 649602,
+      "sha256": "b57b1821d000f6534dfce47a616d27b899323b9fa593e234992020c8529ba682",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "browser_result",
+      "acceptance_items": [
+        "browser_result"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-027",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 3385,
+      "sha256": "b85c8c44e14ed42c9f661b5d21b6126d2b35a74d8bb335b8abb59fc8fdc7d775",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "historical_partial_report",
+      "acceptance_items": [
+        "historical_partial_report"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-028",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 2325,
+      "sha256": "5b88e5f640d50bdb67a621346b43da4da94f5cbe03976cc00f0dfe67d00c6032",
+      "hash_mode": "exact-bytes",
+      "stage": "C",
+      "evidence_type": "runtime_diagnostic",
+      "acceptance_items": [
+        "runtime_diagnostic"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-029",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 4792,
+      "sha256": "04a78b8b9f56c47c41b77daa8b7414977b25633b6aa2618fbd6b11c5cef42bda",
+      "hash_mode": "exact-bytes",
+      "stage": "D1",
+      "evidence_type": "historical_partial_report",
+      "acceptance_items": [
+        "historical_partial_report"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-030",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 3845,
+      "sha256": "848486e5eb71432cdffbfe601912093e7df31210dac3e9c4dd1220b758b6f4cb",
+      "hash_mode": "exact-bytes",
+      "stage": "D1 supplement",
+      "evidence_type": "runtime_report",
+      "acceptance_items": [
+        "runtime_report"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-031",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 4933,
+      "sha256": "64136a35ae98ed34486cc80694c6f56f5f6b77aec41ef4c1184afbef0d65a089",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "runtime_report",
+      "acceptance_items": [
+        "runtime_report"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-032",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1546,
+      "sha256": "45c4e999233cc15302d8be051547eff57cc5d8cbbab2cca0c511b390b554bee6",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "process_result",
+      "acceptance_items": [
+        "process_result"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-033",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 63880,
+      "sha256": "89d9fceecf5295f27073049412064f3cb216ad243eb3352902fdcc88f9f2a3ac",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "runtime_diagnostic",
+      "acceptance_items": [
+        "runtime_diagnostic"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-034",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 2177,
+      "sha256": "ce70cc9944f5ac18b8d278b919ffdead81860b0789cd43e927a7c98a121c0528",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "network_result",
+      "acceptance_items": [
+        "network_result"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-035",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 1297,
+      "sha256": "4f27d115e0556144c8284107f407f0affbfe3b3e14d617b8dcd29fe38033d00f",
+      "hash_mode": "exact-bytes",
+      "stage": "D2",
+      "evidence_type": "diagnostic_clarification",
+      "acceptance_items": [
+        "diagnostic_clarification"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "REAL_RUNTIME",
+      "git_delivered": false,
+      "private_evidence_id": "PRIVATE-036",
+      "record_kind": "files",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 5403,
+      "sha256": "1ef656423848d5c2c69d799597d9e9a69f749930c0cedf1c038e8d72aea269a0",
+      "hash_mode": "exact-bytes",
+      "stage": "historical pre-Task10 risk",
+      "evidence_type": "historical_test_or_diagnostic",
+      "acceptance_items": [
+        "unresolved startup timeout"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "AUTOMATED_TEST_OR_HISTORICAL_DIAGNOSTIC",
+      "git_delivered": false,
+      "source_scope": "Historical earlier source/dirty diagnostic context;NOT a39907ad runtime pass. Actual provenance in original record.",
+      "private_evidence_id": "PRIVATE-037",
+      "record_kind": "files",
+      "runtime_source_head": null,
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 6682,
+      "sha256": "6f9088dfa761605096ff05c2adb15a535217947b166f0f585c36e58f34ee6ea4",
+      "hash_mode": "exact-bytes",
+      "stage": "historical pre-Task10 risk",
+      "evidence_type": "historical_test_or_diagnostic",
+      "acceptance_items": [
+        "unresolved startup timeout"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "AUTOMATED_TEST_OR_HISTORICAL_DIAGNOSTIC",
+      "git_delivered": false,
+      "source_scope": "Historical earlier source/dirty diagnostic context;NOT a39907ad runtime pass. Actual provenance in original record.",
+      "private_evidence_id": "PRIVATE-038",
+      "record_kind": "files",
+      "runtime_source_head": null,
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 7048,
+      "sha256": "69e2c6d6ca3efc1913d8f1e8b8b430d11c3ecc167763eb0e3cf1e52791a8406d",
+      "hash_mode": "exact-bytes",
+      "stage": "historical pre-Task10 risk",
+      "evidence_type": "historical_test_or_diagnostic",
+      "acceptance_items": [
+        "unresolved startup timeout"
+      ],
+      "controlled_fixture": false,
+      "runtime_classification": "AUTOMATED_TEST_OR_HISTORICAL_DIAGNOSTIC",
+      "git_delivered": false,
+      "source_scope": "Historical earlier source/dirty diagnostic context;NOT a39907ad runtime pass. Actual provenance in original record.",
+      "private_evidence_id": "PRIVATE-039",
+      "record_kind": "files",
+      "runtime_source_head": null,
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 15814,
+      "sha256": "1243761f32171288a28a440575a9dece92f90dccf0581e397be31ac3ac83ee53",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 94,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-040",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 4073,
+      "sha256": "e89f64698db0c9456cf074a421eca96e6c8169ac8f41f15775e385b1fc21de6d",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 21,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-041",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 2975,
+      "sha256": "423cd1c3d8861fca7d78c0196e46a108e1bbad30dc9aec9ec37ee7cc08b729e7",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 18,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-042",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 5011,
+      "sha256": "cd3821c879011f736ae8fd9f78be915c55c5164f0a3a0da00803bf0ae2c0a7f7",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 29,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-043",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 10983,
+      "sha256": "9d01b14ccbb6a1d1deccb1373b6af9a395556a64da837d7114bbfbe4ad281aa1",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 66,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-044",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 11164,
+      "sha256": "5f99aa425c775056a822373a6d627ca09c461be6188a6f32d4b3966bca1a9995",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 68,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-045",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 3444,
+      "sha256": "bfcd1bf1c9dc2a0563eb247d148c1dcf44afd33c13f6521d20026ad87b5e81c6",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 20,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-046",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 5067,
+      "sha256": "b1ec155fbad8c055d5ae73a6475a8825f5b4411bebbfd613ed6cca9a3dddc595",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 30,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-047",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 10085,
+      "sha256": "787d63f7d657ce0ffc0ae4bfb6bd65e807e028823a813539db782babc4886642",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 61,
+      "git_delivered": false,
+      "controlled_fixture": true,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-048",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 11065,
+      "sha256": "b7b5478edcc03dd520e1bebce8a98271f269676310297645be51cc6864a3c0ac",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 67,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-049",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    },
+    {
+      "bytes": 11107,
+      "sha256": "8ccd9f6cde76ce88cea4e85268bd3dffd896794b7d7af02a723bafd95d81c22c",
+      "hash_mode": "exact-bytes",
+      "stage": "A/B/C/D1/D2 provenance",
+      "evidence_type": "raw_sha256_index",
+      "entries": 67,
+      "git_delivered": false,
+      "controlled_fixture": false,
+      "acceptance_items": [
+        "raw evidence integrity and provenance"
+      ],
+      "private_evidence_id": "PRIVATE-050",
+      "record_kind": "indexes",
+      "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+      "available_in_public_snapshot": false,
+      "hash_scope": "Exact original private record bytes;not the edited public excerpts."
+    }
+  ],
+  "private_archive_scope": "Not distributed. Exact original record hashes and sizes preserved;public samples are editorial excerpts. Cannot fully re-audit original runtime using this snapshot alone.",
+  "old_index_entries_verified": 541,
+  "old_index_entries_may_overlap": true,
+  "human_dispositions": {
+    "StageC": "PASS after separately authorized legal gap fixture",
+    "StageD1": "CONDITIONALLY ACCEPTED;10 cumulative roundtrips across2runs,Chrome fatal NOT VERIFIED",
+    "StageD2": "PASS;does not resolve residual risks"
+  },
+  "risk_register": [
+    {
+      "id": "RECORDER_START_TIMEOUT_UNRESOLVED",
+      "root_cause": "UNKNOWN",
+      "status": "UNRESOLVED",
+      "facts": "Task4/Task7 full backend runs had unexpected START_TIMEOUT; later targeted andStageA/B passes are not production fixes.",
+      "impact": "Recording may be disabled for a run while realtime continues; check seq0/RECORDING.",
+      "required_decision": "Human residual-risk decision before final integration."
+    },
+    {
+      "id": "SHUTDOWN_UNRESOLVED",
+      "root_cause": "UNKNOWN",
+      "status": "UNRESOLVED",
+      "facts": "StageC process remained alive210.4545951s after stop request;listener closed;WinError10054 logged without proven causality.",
+      "impact": "Exit and recording/resource release may remain unconfirmed. Later normal exits do not close this risk."
+    },
+    {
+      "id": "CHROME_FATAL_NOT_VERIFIED",
+      "status": "NOT VERIFIED",
+      "facts": "Task7/8 real Cesium public-object tests exist; controlled Chrome collectionChanged fatal injection did not complete.",
+      "exception": "Human limited D2 admission exception;never Chrome fatal PASS."
+    }
+  ],
+  "not_claimed": [
+    "Actual512MiB capacity exhaustion",
+    "Chrome fatal injectionPASS",
+    "One process10continuous roundtrips",
+    "Resolved startup/shutdown",
+    "Production deployment",
+    "Merge readiness"
+  ],
+  "export_exclusions": {
+    "tracked_paths": [
+      "data/processed/.gitkeep",
+      "data/raw/.gitkeep",
+      "docs/.gitkeep",
+      "docs/phase1b-validation.txt",
+      "docs/phase1c-validation.txt",
+      "docs/phase2a-validation.txt",
+      "docs/phase2b-validation.txt",
+      "docs/phase2c-ci1-evidence/acceptance-samples.json",
+      "docs/phase2c-ci1-evidence/fatal-state.png",
+      "docs/phase2c-ci1-evidence/manifest.json",
+      "docs/phase2c-ci1-evidence/normal-fleet.png",
+      "docs/phase2c-ci1-validation.txt",
+      "docs/phase2c-evidence/acceptance-samples.json",
+      "docs/phase2c-evidence/dev-fleet.png",
+      "docs/phase2c-evidence/manifest.json",
+      "docs/phase2c-evidence/preview-fleet.png",
+      "docs/phase2c-fi2-evidence/acceptance-samples.json",
+      "docs/phase2c-fi2-evidence/dev-normal.png",
+      "docs/phase2c-fi2-evidence/fleet-first-fatal.png",
+      "docs/phase2c-fi2-evidence/manifest.json",
+      "docs/phase2c-fi2-evidence/preview-normal.png",
+      "docs/phase2c-fi2-evidence/scene-first-fatal.png",
+      "docs/phase2c-fi2-validation.txt",
+      "docs/phase2c-fix-evidence/acceptance-samples.json",
+      "docs/phase2c-fix-evidence/dev-fleet.png",
+      "docs/phase2c-fix-evidence/manifest.json",
+      "docs/phase2c-fix-evidence/preview-fleet.png",
+      "docs/phase2c-fix-validation.txt",
+      "docs/phase2c-validation.txt",
+      "docs/superpowers/plans/2026-10-02-phase2a-cesium-realtime-frontend.md",
+      "docs/superpowers/plans/2026-10-10-phase2b-mine-scene-road-network.md",
+      "docs/superpowers/plans/2026-10-14-phase2c-multi-vehicle-fleet.md",
+      "docs/superpowers/plans/2026-10-18-phase2d-history-replay.md",
+      "docs/superpowers/specs/2026-10-01-phase2a-cesium-realtime-frontend-design.md",
+      "docs/superpowers/specs/2026-10-10-phase2b-mine-scene-road-network-design.md",
+      "docs/superpowers/specs/2026-10-14-phase2c-multi-vehicle-fleet-design.md",
+      "docs/superpowers/specs/2026-10-18-phase2d-history-replay-design.md",
+      "scripts/.gitkeep"
+    ],
+    "never_copied_categories": [
+      "original Git metadata/history",
+      "private evidence archives",
+      "SQLite databases and sidecars",
+      "raw logs",
+      "browser profiles",
+      "environment files",
+      "node_modules",
+      "virtual environments",
+      "dist/build output"
+    ]
+  },
+  "source_integrity": {
+    "backend_files": 33,
+    "frontend_files": 53,
+    "all_86_source_test_config_files_byte_identical_to_export": true,
+    "three_screenshots_byte_identical_to_export": true,
+    "project_license": "UNDECIDED_NOT_ADDED"
+  },
+  "documentation_changes": [
+    "README.md",
+    ".gitignore",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/phase2d-validation.txt",
+    "docs/phase2d-evidence/manifest.json",
+    "docs/phase2d-evidence/acceptance-samples.json"
+  ]
+}

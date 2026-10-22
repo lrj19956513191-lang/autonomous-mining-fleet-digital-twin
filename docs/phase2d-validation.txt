@@ -1,0 +1,119 @@
+公开作品集编辑副本 / Public editorial edition — 2026-10-22
+runtime_source_head: 39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c
+export_source_commit: c345b0e6f10983d0e7713d65be4b9ea6250b80c7
+public_repository_commit: null（尚未创建独立Git提交）
+旧SHA仅为来源标识，不保证在公开仓库可检出。本次仅导出/脱敏/整理文档，未运行新测试。
+原始验收结论与未关闭风险保留；下文的历史日期和运行数值未改写。
+
+Phase 2D：历史记录与轨迹回放——验收记录及保留风险
+生成日期：2026-10-21（Asia/Shanghai）
+
+A. 版本与环境
+源码 HEAD：39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c
+master 基线：3c0705a0be0b2cb04f9f37bb1b5ea06d32e6a060
+分支：codex/phase2d-history-replay
+本报告引用的运行证据对应上述源码 HEAD。后续文档提交不等于在新提交上重新执行运行验收。
+Python 3.12.14 / SQLite 3.53.1 / Node 24.21.0 / npm 11.19.0。
+Cesium 1.146.0 / Chrome 155.0.8059.40 / 真实 Windows 桌面及 WebGL2。
+本地单 worker、唯一 FleetSimulator 推进任务；没有生产部署验收。
+
+B. 自动验证范围（复用既有证据，Stage E 未重跑）
+Stage A：后端 813 passed，1 项既有 Starlette warning，exit 0，耗时 66.6918606 秒。
+前端 1141 passed，exit 0；TypeScript/Vite build、npm ls --depth=0 均 exit 0。
+D2：同一源码 HEAD 上额外获准的一次 npm.cmd run build，exit 0；345 个 dist 文件有独立 SHA 清单。
+Task4、Task7 历史完整后端回归各有 812 PASS / 1 FAIL，非预期 START_TIMEOUT；保留失败，不用后续通过覆盖。
+本轮未启动服务、录制或 Chrome，未执行 pytest/Vitest/build。
+
+C. SQLite 真实会话及新旧协议一致性
+主会话：91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc
+终态 COMPLETED；sequence 0..259（含两端），260 条；simulation_time 0..259 秒。
+seq0 落盘后才观察到 RECORDING；进程启动至该状态观测为 1.3116696 秒。
+内部 ACK 时间未插桩，不能将该观测耗时写成实测 ACK 延迟。
+scene SHA256：634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046
+config SHA256：8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8
+处理后保存场景包含 21 个 feature，渲染 13 个静态 Entity，拓扑节点不单独渲染。
+原 helper 的 scene_features=2 是容器键数量，不是场景对象数；保留原输出并在此更正解释。
+完整 payload/scene/config SHA、sequence 连续性通过。无客户端仍记录；新增 HTTP/WS 客户端不产生重复记录。
+SQLite 精确匹配：Fleet WS-a 80 包、Fleet WS-b 79 包、旧 WS 79 包；Fleet HTTP 52 次、旧 HTTP 52 次。
+旧十字段按精确 timestamp 配对，不按接收时间接近程度推断同周期；新协议还核对 session/sequence。
+检查了 TRUCK_002 的 [60,75)、[180,195) 及 TRUCK_003 的 [90,110)、[210,230)；停车位置/SOC不变、恢复连续。
+正常关闭产生 COMPLETED。同目录重启创建不同 session，旧会话可读。
+独立短会话在明确归属后受控终止，重启恢复为 INTERRUPTED，seq0..3 共4条，标记 UNCLEAN_SHUTDOWN，可读已持久化前缀。
+独立关闭数据库副本的 TEMP SQLite abort trigger 注入产生 FAILED 前缀 seq0..1，实时/health 继续。
+这是受控写失败，不是实际耗尽 512MiB 的容量测试；没有修改原成功会话制造故障。
+
+D. 真实 Chrome / Cesium 展示
+开发模式真实 WebGL2、保存场景、EntityCollection；13静态+3车辆=16 Entity，车辆及 position property 身份保持。
+39 个实际车辆样本：Entity 与记录坐标的最大 ECEF 误差 2.7152485655831642e-9 m（阈值1e-6 m）；
+到处理后道路小弦的最大误差 4.728340395377948e-7 m（阈值0.05 m）。
+播放/暂停、0.5/1/2/4倍率、前后seek、结束及显式重播均已观察。
+保留原 session/sequence/timestamp/simulation_time；离散回放，不插值、不预测位置或SOC。
+
+E. BUFFERING、真实后台恢复与合法缺口
+CDP暂存 after_sequence101 的真实分页响应；控制器实际缓存只有100/101，目标102未入缓存。
+BUFFERING 游标101与车辆位置冻结 2.593999999924563 秒；释放响应后首个真实帧（6.700000047683716ms）仍为101。
+后续按新单调时钟基准推进，不补偿缓冲等待时间；拦截及临时观察点已解除。
+人工真实 hidden→visible 间隔 81.552 秒，首个恢复帧游标 248.4764999998808 等于冻结值；使用可信可见性事件，未伪造事件或覆盖浏览器API。
+快速 seek 40→200、230→20 的新代结果有效；浏览器可能在JS交付前取消旧请求，不宣称 Chrome 强制验证了忽略 AbortSignal。
+历史暂停期间实时 seq315→318 不改变历史画面。12个历史HTTP请求在0.234秒内看到实时seq645→646，而非额外推进12步。
+历史模式没有活动 Fleet WS；保存场景HTTP与SQLite一致，没有用当前/api/scene替代。FAILED/INTERRUPTED提示已验证。
+独立 CONTROLLED_GAP_FIXTURE：4577b401-8239-4dfe-8cd9-10c0284cc65e
+通过正式 HistoryStore、模拟器 step(1) 后 step(3) 创建；seq0/1/2 对应模拟时间0/1/4，COMPLETED，独立16MiB测试库。
+不是正式生产录制缺口。真实浏览器显示[1,4]缺口，321个缺口帧保持seq1及原位置/SOC，到4秒才应用seq2；不补帧、不外推。
+Stage C早期PARTIAL报告原样保留；人工在合法夹具补验后裁定 Stage C PASS，不改写旧报告。
+
+F. D1生命周期与相机
+人工裁定 CONDITIONALLY ACCEPTED。
+原Chrome PID45660完成9组往返；其第10次只有去程通过，返程中断不计入。本轮补验的独立PID77560完成1组。
+累计跨两次运行10组完整 LIVE→REPLAY→LIVE，不宣称同一进程连续10组。
+通过实际Viewer.isDestroyed、canvas及WS归属核验，最多一个有效Viewer；LIVE一个Fleet WS，REPLAY零个。
+真实dev StrictMode setup→cleanup→setup已观察，不等于HMR/FastRefresh已实测。
+停止跟踪、pause、seek、BUFFERING解绑后分别观察359/430/459/449个真实帧及各3次有效更新。
+最大相机位置差0m，direction差1.1535589208683826e-14rad，up差3.931713519738887e-14rad，frustum不变。
+验收阈值0.01m、1e-6rad；探针不设置相机制造通过。首焦不重复，seek不自动恢复旧跟踪。
+构造同步重入/清理失败等边界保留既有自动化证据，不伪称全部在Chrome再次强制触发。
+受控旧socket回调使用真实旧WS帧构造MessageEvent，不冒充自然迟到数据包。
+
+G. D2 Production Preview
+人工阶段审核通过。真实LIVE三车/WS更新、历史面板、终态保存场景、16 Entity、播放/暂停/seek及四档倍率通过。
+一组完整LIVE→REPLAY→LIVE，生命周期捕获3个Viewer对象，最多一个同时有效；LIVE1 FleetWS，REPLAY0。
+Assets JPEG、ThirdParty WASM、Widgets CSS、Workers JS均由真实Chrome读取，HTTP200、MIME、magic、字节及完整SHA与dist一致。
+无未解释关键Console/Network异常；非关键/favicon.ico404保留，不能写成零404。
+Chrome、后端、launcher、preview正常exit0；Server.wait_closed、lifespan.shutdown.complete有记录，端口释放。
+预检工具曾有Windows动态import路径与旧CDP上下文错误，正式epoch1前处理，原件保留；不是产品修复。
+首次失败工具进程退出码未实测，不能引用其旧note中推断的1。最终正常服务退出码是实际句柄采集值。
+
+H. 警告、限制及例外
+本地作品集演示，不是生产部署。Python标准库SQLite、单writer、有界128包队列；录制失败/队列满停止当前录制，不回滚实时提交。
+仅终态会话可回放，失败/中断前缀标为不完整；HTTP只读已持久化记录，不推进模拟器。
+必须显式设置有效额度；本地批准512MiB（536870912 bytes），不是生产默认。额度仅约束主DB，不等于目录/journal/磁盘总占用限制。
+MVP不自动删除历史，不包含调度、预测、认证、数据库集群或生产上线。
+保留历史Minor、Vite大包/时序/未来native配置警告、既有Starlette警告及未经重审的npm安全提示。
+Chrome collectionChanged fatal专项 NOT VERIFIED：Task7/8真实Cesium公开对象异常测试不等于真实Chrome专项通过。
+人工例外仅允许不阻断D2，不能据此宣称浏览器fatal覆盖完成或集成就绪。
+
+I. 证据清单及复核
+正式文件：docs/phase2d-validation.txt；docs/phase2d-evidence/manifest.json、acceptance-samples.json及三张真实D2截图；README。
+公开manifest的files路径相对本副本根。UTF8文本仅CRLF→LF后计长度/SHA；PNG精确字节。private_archive_records只保留未交付原件的来源ID、原始字节数及SHA。
+manifest不自校验自身，使用Git blob/commit确定其身份。README提供公开文件校验。未交付的私有原件只能在另行提供合法档案后复核。
+完整原始SQLite、HTTP/WS/CDP及审查档案由作者独立保留，不属于本公开快照；以PRIVATE来源ID登记，不提供本机路径或失效文件链接。
+原SQLite、完整HTTP/WS/CDP/Console/Network及失败尝试均保留；普通clone只能复核便携材料，完整重审需要另行保留原始档案。
+541条历史索引记录均逐项核验；跨清单可能重复，不等于541个独立文件。样本是精简原件摘录，不能替代全量记录。
+
+J. 最终风险登记
+RECORDER_START_TIMEOUT_UNRESOLVED
+root_cause: UNKNOWN
+历史Task4/Task7真实失败仍有效；StageA/B本次成功、定向测试成功或封存诊断均非生产修复证据。
+可能导致某次会话录制不可用；最终集成前需要人工明确残余风险接受或另行授权诊断/修复。
+
+SHUTDOWN_UNRESOLVED
+root_cause: UNKNOWN
+历史StageC进程停止监听但超过210.4545951秒未退出，记录WinError10054，因果未定。后续正常关闭不是修复。
+不能仅凭端口关闭断言线程/SQLite/OS锁均释放；应保留现场并确认进程终态。
+
+CHROME_FATAL_NOT_VERIFIED
+status: NOT VERIFIED
+真实Chrome受控collectionChanged fatal专项未完成。人工批准的不阻断D2的有限例外，不等于专项PASS。
+
+结论：Phase2D已授权功能和运行验收项目完成，保留明确列示的可靠性风险及Chrome专项验收例外。
+最终风险裁定由人工决定；本报告不作生产上线或合并就绪声明。

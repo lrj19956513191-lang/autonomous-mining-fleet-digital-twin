@@ -1,0 +1,1766 @@
+{
+  "schema_version": 1,
+  "master_baseline": "3c0705a0be0b2cb04f9f37bb1b5ea06d32e6a060",
+  "generated_at": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "Public editorial excerpts of original evidence. No new runtime validation;private record IDs are source attestations,not public files or retrievable Git commits.",
+  "primary_session": {
+    "source": {
+      "private_evidence_id": "PRIVATE-001",
+      "available_in_public_snapshot": false
+    },
+    "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+    "code_revision": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+    "state": "COMPLETED",
+    "sequence_range": [
+      0,
+      259
+    ],
+    "simulation_time_range": [
+      0,
+      259
+    ],
+    "snapshot_count": 260,
+    "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+    "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+    "scene_feature_count": 21,
+    "vehicle_configs": [
+      {
+        "cruise_speed_kmh": 25.0,
+        "initial_progress_fraction": 0.0,
+        "initial_soc": 90.0,
+        "load": 65.0,
+        "parking": null,
+        "route_id": "ROUTE_001",
+        "soc_rate": 0.1,
+        "vehicle_id": "TRUCK_001"
+      },
+      {
+        "cruise_speed_kmh": 25.0,
+        "initial_progress_fraction": 0.3333333333333333,
+        "initial_soc": 80.0,
+        "load": 40.0,
+        "parking": {
+          "duration_seconds": 15.0,
+          "period_seconds": 120.0,
+          "start_seconds": 60.0
+        },
+        "route_id": "ROUTE_001",
+        "soc_rate": 0.1,
+        "vehicle_id": "TRUCK_002"
+      },
+      {
+        "cruise_speed_kmh": 25.0,
+        "initial_progress_fraction": 0.6666666666666666,
+        "initial_soc": 70.0,
+        "load": 80.0,
+        "parking": {
+          "duration_seconds": 20.0,
+          "period_seconds": 120.0,
+          "start_seconds": 90.0
+        },
+        "route_id": "ROUTE_001",
+        "soc_rate": 0.1,
+        "vehicle_id": "TRUCK_003"
+      }
+    ],
+    "selected_original_snapshots": [
+      {
+        "payload": {
+          "schema_version": 1,
+          "sequence": 0,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "simulation_time_seconds": 0.0,
+          "timestamp": "2026-10-19T16:17:29.001621+00:00",
+          "vehicles": [
+            {
+              "heading": 124.70016376658535,
+              "height": 50.0,
+              "latitude": 39.9,
+              "load": 65.0,
+              "longitude": 116.39,
+              "soc": 90.0,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:17:29.001621+00:00",
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "heading": 0.0,
+              "height": 54.99059435251935,
+              "latitude": 39.90148589153059,
+              "load": 40.0,
+              "longitude": 116.396,
+              "soc": 80.0,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:17:29.001621+00:00",
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "heading": 252.01674414076572,
+              "height": 52.66561191213541,
+              "latitude": 39.90283280979934,
+              "load": 80.0,
+              "longitude": 116.38833122058874,
+              "soc": 70.0,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:17:29.001621+00:00",
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        },
+        "payload_sha256": "3b3281ae45cdb693ba9c2681732e65f345e37a91c61be162f433cc4ac66afb64"
+      },
+      {
+        "payload": {
+          "schema_version": 1,
+          "sequence": 60,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "simulation_time_seconds": 60.0,
+          "timestamp": "2026-10-19T16:18:29.423511+00:00",
+          "vehicles": [
+            {
+              "heading": 82.6028081222706,
+              "height": 52.75634178353489,
+              "latitude": 39.89915127153551,
+              "load": 65.0,
+              "longitude": 116.39451268249562,
+              "soc": 84.00000000000034,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:29.423511+00:00",
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "heading": 278.85529052479285,
+              "height": 54.57962684330346,
+              "latitude": 39.90328407598626,
+              "load": 40.0,
+              "longitude": 116.39213271195354,
+              "soc": 74.00000000000034,
+              "speed": 0.0,
+              "status": "stopped",
+              "timestamp": "2026-10-19T16:18:29.423511+00:00",
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "heading": 162.20771256131246,
+              "height": 50.60781279698846,
+              "latitude": 39.90005875091613,
+              "load": 80.0,
+              "longitude": 116.38639218867807,
+              "soc": 64.00000000000034,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:29.423511+00:00",
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        },
+        "payload_sha256": "3e2dc818563b7f5330b054d3fddf9ee0b1a16906be9ad3f66a3e34d98fa1811c"
+      },
+      {
+        "payload": {
+          "schema_version": 1,
+          "sequence": 75,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "simulation_time_seconds": 75.0,
+          "timestamp": "2026-10-19T16:18:44.455394+00:00",
+          "vehicles": [
+            {
+              "heading": 43.91321596021737,
+              "height": 53.50397824689143,
+              "latitude": 39.89960318368912,
+              "load": 65.0,
+              "longitude": 116.39550397533999,
+              "soc": 82.50000000000043,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:44.455394+00:00",
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "heading": 278.85529052479285,
+              "height": 54.57962684330346,
+              "latitude": 39.90328407598626,
+              "load": 40.0,
+              "longitude": 116.39213271195354,
+              "soc": 74.00000000000034,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:44.455394+00:00",
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "heading": 85.75635385126037,
+              "height": 50.37673349882337,
+              "latitude": 39.899849316411654,
+              "load": 80.0,
+              "longitude": 116.38736286361814,
+              "soc": 62.50000000000032,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:44.455394+00:00",
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        },
+        "payload_sha256": "1fb1420007f9bd66caee1a8754c67cdfe9c751311d561bc9c87e78e7554bf4aa"
+      },
+      {
+        "payload": {
+          "schema_version": 1,
+          "sequence": 90,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "simulation_time_seconds": 90.0,
+          "timestamp": "2026-10-19T16:18:59.583004+00:00",
+          "vehicles": [
+            {
+              "heading": 0.0,
+              "height": 54.258217296227855,
+              "latitude": 39.90038732598162,
+              "load": 65.0,
+              "longitude": 116.396,
+              "soc": 81.00000000000051,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:59.583004+00:00",
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "heading": 262.60231622451835,
+              "height": 53.96260787506381,
+              "latitude": 39.90319253049809,
+              "load": 40.0,
+              "longitude": 116.39092521274213,
+              "soc": 72.50000000000043,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:18:59.583004+00:00",
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "heading": 85.75713304477597,
+              "height": 50.20320169055013,
+              "latitude": 39.89991873206559,
+              "load": 80.0,
+              "longitude": 116.3885775857116,
+              "soc": 61.0000000000003,
+              "speed": 0.0,
+              "status": "stopped",
+              "timestamp": "2026-10-19T16:18:59.583004+00:00",
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        },
+        "payload_sha256": "e3a1c7a3b974920fd7a2df0d11bb8381c3ded22fd5b5b7249480c59b1daba394"
+      },
+      {
+        "payload": {
+          "schema_version": 1,
+          "sequence": 110,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "simulation_time_seconds": 110.0,
+          "timestamp": "2026-10-19T16:19:19.792532+00:00",
+          "vehicles": [
+            {
+              "heading": 322.39757204832836,
+              "height": 55.07299791857612,
+              "latitude": 39.90160949754747,
+              "load": 65.0,
+              "longitude": 116.39589050533542,
+              "soc": 79.00000000000063,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:19:19.792532+00:00",
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "heading": 262.60128301665355,
+              "height": 53.15728865474566,
+              "latitude": 39.903031461373885,
+              "load": 40.0,
+              "longitude": 116.38931457608139,
+              "soc": 70.50000000000054,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:19:19.792532+00:00",
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "heading": 85.75713304477597,
+              "height": 50.20320169055013,
+              "latitude": 39.89991873206559,
+              "load": 80.0,
+              "longitude": 116.3885775857116,
+              "soc": 61.0000000000003,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:19:19.792532+00:00",
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        },
+        "payload_sha256": "d72fe043e659a3807d493285a871966091c69bca9de2d2383e190bd74f9f552c"
+      },
+      {
+        "payload": {
+          "schema_version": 1,
+          "sequence": 259,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "simulation_time_seconds": 259.0,
+          "timestamp": "2026-10-19T16:21:49.872122+00:00",
+          "vehicles": [
+            {
+              "heading": 207.17831944662183,
+              "height": 51.012016674318986,
+              "latitude": 39.90101802506498,
+              "load": 65.0,
+              "longitude": 116.38601201641545,
+              "soc": 64.10000000000147,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:21:49.872122+00:00",
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "heading": 124.70075777136304,
+              "height": 50.61734459264059,
+              "latitude": 39.89950612663054,
+              "load": 40.0,
+              "longitude": 116.39092602100939,
+              "soc": 57.10000000000081,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:21:49.872122+00:00",
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "heading": 322.3975264176539,
+              "height": 55.12041344323618,
+              "latitude": 39.9016806212129,
+              "load": 80.0,
+              "longitude": 116.39581938329931,
+              "soc": 48.100000000000115,
+              "speed": 25.0,
+              "status": "running",
+              "timestamp": "2026-10-19T16:21:49.872122+00:00",
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        },
+        "payload_sha256": "169588e8f46bd1170deab851b8d12b4fa2362de96c7520588de726c1ec41355a"
+      }
+    ],
+    "ws_exact_matches": {
+      "fleet-a": {
+        "exact_matches": 80,
+        "first_timestamp": "2026-10-19T16:20:05.083614+00:00",
+        "last_timestamp": "2026-10-19T16:21:24.753968+00:00"
+      },
+      "fleet-b": {
+        "exact_matches": 79,
+        "first_timestamp": "2026-10-19T16:20:05.083614+00:00",
+        "last_timestamp": "2026-10-19T16:21:23.743011+00:00"
+      },
+      "legacy": {
+        "exact_matches": 79,
+        "first_timestamp": "2026-10-19T16:20:05.083614+00:00",
+        "last_timestamp": "2026-10-19T16:21:23.743011+00:00"
+      }
+    },
+    "http_exact_matches": {
+      "/api/fleet": 52,
+      "/api/vehicles/TRUCK_001": 52
+    },
+    "parking_windows": [
+      {
+        "vehicle_id": "TRUCK_002",
+        "stop": 60,
+        "resume": 75,
+        "stopped_position_soc_constant": true,
+        "moves_next_step": true
+      },
+      {
+        "vehicle_id": "TRUCK_003",
+        "stop": 90,
+        "resume": 110,
+        "stopped_position_soc_constant": true,
+        "moves_next_step": true
+      },
+      {
+        "vehicle_id": "TRUCK_002",
+        "stop": 180,
+        "resume": 195,
+        "stopped_position_soc_constant": true,
+        "moves_next_step": true
+      },
+      {
+        "vehicle_id": "TRUCK_003",
+        "stop": 210,
+        "resume": 230,
+        "stopped_position_soc_constant": true,
+        "moves_next_step": true
+      }
+    ],
+    "count_correction": "Original scene_features=2 counted envelope keys; actual saved features.features count is21."
+  },
+  "http_sqlite_ws_match": {
+    "sources": [
+      {
+        "private_evidence_id": "PRIVATE-002",
+        "available_in_public_snapshot": false
+      },
+      {
+        "private_evidence_id": "PRIVATE-003",
+        "available_in_public_snapshot": false
+      },
+      {
+        "private_evidence_id": "PRIVATE-004",
+        "available_in_public_snapshot": false
+      },
+      {
+        "private_evidence_id": "PRIVATE-005",
+        "available_in_public_snapshot": false
+      }
+    ],
+    "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+    "sequence": 156,
+    "timestamp": "2026-10-19T16:20:06.096995+00:00",
+    "sqlite_payload_sha256": "ecaa696190d883772ac81d2fde6f554119d4087002c24274a6e419e18f05df1d",
+    "http_record": {
+      "received_utc": "2026-10-19T16:20:06.636Z",
+      "path": "/api/fleet",
+      "status": 200,
+      "body": {
+        "schema_version": 1,
+        "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+        "sequence": 156,
+        "timestamp": "2026-10-19T16:20:06.096995+00:00",
+        "simulation_time_seconds": 156,
+        "vehicles": [
+          {
+            "vehicle_id": "TRUCK_001",
+            "timestamp": "2026-10-19T16:20:06.096995+00:00",
+            "longitude": 116.3930606590481,
+            "latitude": 39.90317272781785,
+            "height": 55.13639383096839,
+            "heading": 278.85588578455247,
+            "speed": 25,
+            "soc": 74.40000000000089,
+            "load": 65,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_002",
+            "timestamp": "2026-10-19T16:20:06.096995+00:00",
+            "longitude": 116.38639908236055,
+            "latitude": 39.90159863246514,
+            "height": 51.39908758967745,
+            "heading": 207.17856774790584,
+            "speed": 25,
+            "soc": 65.9000000000008,
+            "load": 40,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_003",
+            "timestamp": "2026-10-19T16:20:06.096995+00:00",
+            "longitude": 116.39197744080508,
+            "latitude": 39.89913634345775,
+            "height": 51.318293239279626,
+            "heading": 99.82102685319995,
+            "speed": 25,
+            "soc": 56.40000000000023,
+            "load": 80,
+            "status": "running"
+          }
+        ]
+      }
+    },
+    "fleet_ws_record": {
+      "received_utc": "2026-10-19T16:20:06.098Z",
+      "source": "fleet-a",
+      "body": {
+        "schema_version": 1,
+        "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+        "sequence": 156,
+        "timestamp": "2026-10-19T16:20:06.096995+00:00",
+        "simulation_time_seconds": 156,
+        "vehicles": [
+          {
+            "vehicle_id": "TRUCK_001",
+            "timestamp": "2026-10-19T16:20:06.096995+00:00",
+            "longitude": 116.3930606590481,
+            "latitude": 39.90317272781785,
+            "height": 55.13639383096839,
+            "heading": 278.85588578455247,
+            "speed": 25,
+            "soc": 74.40000000000089,
+            "load": 65,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_002",
+            "timestamp": "2026-10-19T16:20:06.096995+00:00",
+            "longitude": 116.38639908236055,
+            "latitude": 39.90159863246514,
+            "height": 51.39908758967745,
+            "heading": 207.17856774790584,
+            "speed": 25,
+            "soc": 65.9000000000008,
+            "load": 40,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_003",
+            "timestamp": "2026-10-19T16:20:06.096995+00:00",
+            "longitude": 116.39197744080508,
+            "latitude": 39.89913634345775,
+            "height": 51.318293239279626,
+            "heading": 99.82102685319995,
+            "speed": 25,
+            "soc": 56.40000000000023,
+            "load": 80,
+            "status": "running"
+          }
+        ]
+      }
+    },
+    "legacy_ws_record": {
+      "received_utc": "2026-10-19T16:20:06.159Z",
+      "source": "legacy",
+      "body": {
+        "vehicle_id": "TRUCK_001",
+        "timestamp": "2026-10-19T16:20:06.096995+00:00",
+        "longitude": 116.3930606590481,
+        "latitude": 39.90317272781785,
+        "height": 55.13639383096839,
+        "heading": 278.85588578455247,
+        "speed": 25,
+        "soc": 74.40000000000089,
+        "load": 65,
+        "status": "running"
+      }
+    },
+    "all_fields_equal": true,
+    "pairing_rule": "Exact same committed timestamp/session/sequence; never reception proximity."
+  },
+  "precision": {
+    "source": {
+      "private_evidence_id": "PRIVATE-006",
+      "available_in_public_snapshot": false
+    },
+    "kind": "database_model_entity_exact",
+    "vehicle_samples": 39,
+    "max_recorded_coordinate_ecef_error_m": 2.7152485655831642e-09,
+    "max_road_small_chord_error_m": 4.728340395377948e-07,
+    "stable_identities": {
+      "TRUCK_001": [
+        14,
+        15
+      ],
+      "TRUCK_002": [
+        16,
+        17
+      ],
+      "TRUCK_003": [
+        18,
+        19
+      ]
+    },
+    "entity_limit_m": 1e-06,
+    "road_limit_m": 0.05
+  },
+  "buffering": {
+    "source": {
+      "private_evidence_id": "PRIVATE-007",
+      "available_in_public_snapshot": false
+    },
+    "summary": {
+      "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+      "actual_cache": {
+        "session": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+        "modelSequence": 101,
+        "cursor": 101,
+        "pendingPage": true,
+        "pages": [
+          {
+            "bytes": 1914,
+            "sequences": [
+              100,
+              101
+            ]
+          }
+        ],
+        "generation": 2
+      },
+      "target_not_cached": 102,
+      "frozen_cursor": 101,
+      "frozen_wall_seconds": 2.593999999924563,
+      "first_resumed_cursor": 101,
+      "first_real_frame_after_release_ms": 6.700000047683716,
+      "interceptions_and_logpoint_removed": true
+    },
+    "buffering_start": {
+      "perf": 171560.79999995232,
+      "wall_utc": "2026-10-19T18:04:53.258766+00:00",
+      "model": {
+        "session": {
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "state": "COMPLETED",
+          "started_utc": "2026-10-19T16:17:29.001621+00:00",
+          "ended_utc": "2026-10-19T16:21:50.703086+00:00",
+          "snapshot_count": 260,
+          "first_sequence": 0,
+          "last_sequence": 259,
+          "first_simulation_time": 0,
+          "last_simulation_time": 259,
+          "incomplete": false,
+          "failure_code": null,
+          "failure_message": null,
+          "storage_version": 1,
+          "fleet_schema_version": 1,
+          "code_revision": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+          "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+          "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+          "vehicle_configs": [
+            {
+              "vehicle_id": "TRUCK_001",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 90,
+              "load": 65,
+              "soc_rate": 0.1,
+              "parking": null
+            },
+            {
+              "vehicle_id": "TRUCK_002",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0.3333333333333333,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 80,
+              "load": 40,
+              "soc_rate": 0.1,
+              "parking": {
+                "period_seconds": 120,
+                "start_seconds": 60,
+                "duration_seconds": 15
+              }
+            },
+            {
+              "vehicle_id": "TRUCK_003",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0.6666666666666666,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 70,
+              "load": 80,
+              "soc_rate": 0.1,
+              "parking": {
+                "period_seconds": 120,
+                "start_seconds": 90,
+                "duration_seconds": 20
+              }
+            }
+          ]
+        },
+        "snapshot": {
+          "schema_version": 1,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "sequence": 101,
+          "timestamp": "2026-10-19T16:19:10.694342+00:00",
+          "simulation_time_seconds": 101,
+          "vehicles": [
+            {
+              "vehicle_id": "TRUCK_001",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.396,
+              "latitude": 39.901075311334885,
+              "height": 54.716874196925446,
+              "heading": 0,
+              "speed": 25,
+              "soc": 79.90000000000057,
+              "load": 65,
+              "status": "running"
+            },
+            {
+              "vehicle_id": "TRUCK_002",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.39003936164535,
+              "latitude": 39.903103945248525,
+              "height": 53.51968230389927,
+              "heading": 262.6017479708544,
+              "speed": 25,
+              "soc": 71.40000000000049,
+              "load": 40,
+              "status": "running"
+            },
+            {
+              "vehicle_id": "TRUCK_003",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.3885775857116,
+              "latitude": 39.89991873206559,
+              "height": 50.20320169055013,
+              "heading": 85.75713304477597,
+              "speed": 0,
+              "soc": 61.0000000000003,
+              "load": 80,
+              "status": "stopped"
+            }
+          ]
+        },
+        "status": "BUFFERING",
+        "time_seconds": 101,
+        "rate": 4,
+        "selectedVehicleId": "TRUCK_001",
+        "trackedVehicleId": null,
+        "sceneState": "READY",
+        "sceneError": null,
+        "renderError": null,
+        "incomplete": false,
+        "gap": null
+      },
+      "vehicles": [
+        {
+          "id": "TRUCK_001",
+          "identity": 14,
+          "positionIdentity": 15,
+          "position": {
+            "x": -2178318.2362043443,
+            "y": 4388962.960705081,
+            "z": 4069600.3691751934
+          },
+          "polyline": null
+        },
+        {
+          "id": "TRUCK_002",
+          "identity": 16,
+          "positionIdentity": 17,
+          "position": {
+            "x": -2177796.9970883857,
+            "y": 4389059.297504243,
+            "z": 4069772.397369138
+          },
+          "polyline": null
+        },
+        {
+          "id": "TRUCK_003",
+          "identity": 18,
+          "positionIdentity": 19,
+          "position": {
+            "x": -2177784.7204538602,
+            "y": 4389315.805284251,
+            "z": 4069498.955829332
+          },
+          "polyline": null
+        }
+      ]
+    },
+    "frozen_after_delay": {
+      "model": {
+        "session": {
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "state": "COMPLETED",
+          "started_utc": "2026-10-19T16:17:29.001621+00:00",
+          "ended_utc": "2026-10-19T16:21:50.703086+00:00",
+          "snapshot_count": 260,
+          "first_sequence": 0,
+          "last_sequence": 259,
+          "first_simulation_time": 0,
+          "last_simulation_time": 259,
+          "incomplete": false,
+          "failure_code": null,
+          "failure_message": null,
+          "storage_version": 1,
+          "fleet_schema_version": 1,
+          "code_revision": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+          "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+          "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+          "vehicle_configs": [
+            {
+              "vehicle_id": "TRUCK_001",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 90,
+              "load": 65,
+              "soc_rate": 0.1,
+              "parking": null
+            },
+            {
+              "vehicle_id": "TRUCK_002",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0.3333333333333333,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 80,
+              "load": 40,
+              "soc_rate": 0.1,
+              "parking": {
+                "period_seconds": 120,
+                "start_seconds": 60,
+                "duration_seconds": 15
+              }
+            },
+            {
+              "vehicle_id": "TRUCK_003",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0.6666666666666666,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 70,
+              "load": 80,
+              "soc_rate": 0.1,
+              "parking": {
+                "period_seconds": 120,
+                "start_seconds": 90,
+                "duration_seconds": 20
+              }
+            }
+          ]
+        },
+        "snapshot": {
+          "schema_version": 1,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "sequence": 101,
+          "timestamp": "2026-10-19T16:19:10.694342+00:00",
+          "simulation_time_seconds": 101,
+          "vehicles": [
+            {
+              "vehicle_id": "TRUCK_001",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.396,
+              "latitude": 39.901075311334885,
+              "height": 54.716874196925446,
+              "heading": 0,
+              "speed": 25,
+              "soc": 79.90000000000057,
+              "load": 65,
+              "status": "running"
+            },
+            {
+              "vehicle_id": "TRUCK_002",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.39003936164535,
+              "latitude": 39.903103945248525,
+              "height": 53.51968230389927,
+              "heading": 262.6017479708544,
+              "speed": 25,
+              "soc": 71.40000000000049,
+              "load": 40,
+              "status": "running"
+            },
+            {
+              "vehicle_id": "TRUCK_003",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.3885775857116,
+              "latitude": 39.89991873206559,
+              "height": 50.20320169055013,
+              "heading": 85.75713304477597,
+              "speed": 0,
+              "soc": 61.0000000000003,
+              "load": 80,
+              "status": "stopped"
+            }
+          ]
+        },
+        "status": "BUFFERING",
+        "time_seconds": 101,
+        "rate": 4,
+        "selectedVehicleId": "TRUCK_001",
+        "trackedVehicleId": null,
+        "sceneState": "READY",
+        "sceneError": null,
+        "renderError": null,
+        "incomplete": false,
+        "gap": null
+      },
+      "vehicles": [
+        {
+          "id": "TRUCK_001",
+          "identity": 14,
+          "positionIdentity": 15,
+          "position": {
+            "x": -2178318.2362043443,
+            "y": 4388962.960705081,
+            "z": 4069600.3691751934
+          },
+          "polyline": null
+        },
+        {
+          "id": "TRUCK_002",
+          "identity": 16,
+          "positionIdentity": 17,
+          "position": {
+            "x": -2177796.9970883857,
+            "y": 4389059.297504243,
+            "z": 4069772.397369138
+          },
+          "polyline": null
+        },
+        {
+          "id": "TRUCK_003",
+          "identity": 18,
+          "positionIdentity": 19,
+          "position": {
+            "x": -2177784.7204538602,
+            "y": 4389315.805284251,
+            "z": 4069498.955829332
+          },
+          "polyline": null
+        }
+      ],
+      "wait_wall_seconds": 2.593999999924563
+    },
+    "release_perf": 174180.69999992847,
+    "first_resumed": {
+      "model": {
+        "session": {
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "state": "COMPLETED",
+          "started_utc": "2026-10-19T16:17:29.001621+00:00",
+          "ended_utc": "2026-10-19T16:21:50.703086+00:00",
+          "snapshot_count": 260,
+          "first_sequence": 0,
+          "last_sequence": 259,
+          "first_simulation_time": 0,
+          "last_simulation_time": 259,
+          "incomplete": false,
+          "failure_code": null,
+          "failure_message": null,
+          "storage_version": 1,
+          "fleet_schema_version": 1,
+          "code_revision": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+          "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+          "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+          "vehicle_configs": [
+            {
+              "vehicle_id": "TRUCK_001",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 90,
+              "load": 65,
+              "soc_rate": 0.1,
+              "parking": null
+            },
+            {
+              "vehicle_id": "TRUCK_002",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0.3333333333333333,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 80,
+              "load": 40,
+              "soc_rate": 0.1,
+              "parking": {
+                "period_seconds": 120,
+                "start_seconds": 60,
+                "duration_seconds": 15
+              }
+            },
+            {
+              "vehicle_id": "TRUCK_003",
+              "route_id": "ROUTE_001",
+              "initial_progress_fraction": 0.6666666666666666,
+              "cruise_speed_kmh": 25,
+              "initial_soc": 70,
+              "load": 80,
+              "soc_rate": 0.1,
+              "parking": {
+                "period_seconds": 120,
+                "start_seconds": 90,
+                "duration_seconds": 20
+              }
+            }
+          ]
+        },
+        "snapshot": {
+          "schema_version": 1,
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "sequence": 101,
+          "timestamp": "2026-10-19T16:19:10.694342+00:00",
+          "simulation_time_seconds": 101,
+          "vehicles": [
+            {
+              "vehicle_id": "TRUCK_001",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.396,
+              "latitude": 39.901075311334885,
+              "height": 54.716874196925446,
+              "heading": 0,
+              "speed": 25,
+              "soc": 79.90000000000057,
+              "load": 65,
+              "status": "running"
+            },
+            {
+              "vehicle_id": "TRUCK_002",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.39003936164535,
+              "latitude": 39.903103945248525,
+              "height": 53.51968230389927,
+              "heading": 262.6017479708544,
+              "speed": 25,
+              "soc": 71.40000000000049,
+              "load": 40,
+              "status": "running"
+            },
+            {
+              "vehicle_id": "TRUCK_003",
+              "timestamp": "2026-10-19T16:19:10.694342+00:00",
+              "longitude": 116.3885775857116,
+              "latitude": 39.89991873206559,
+              "height": 50.20320169055013,
+              "heading": 85.75713304477597,
+              "speed": 0,
+              "soc": 61.0000000000003,
+              "load": 80,
+              "status": "stopped"
+            }
+          ]
+        },
+        "status": "PLAYING",
+        "time_seconds": 101.12559999990464,
+        "rate": 4,
+        "selectedVehicleId": "TRUCK_001",
+        "trackedVehicleId": null,
+        "sceneState": "READY",
+        "sceneError": null,
+        "renderError": null,
+        "incomplete": false,
+        "gap": null
+      },
+      "perf": 174244.09999990463
+    },
+    "no_extrapolation": true,
+    "new_monotonic_baseline_no_catch_up": true
+  },
+  "manual_background": {
+    "source": {
+      "private_evidence_id": "PRIVATE-008",
+      "available_in_public_snapshot": false
+    },
+    "hidden_interval_seconds": 81.552,
+    "actual_hidden_event": {
+      "type": "visibilitychange",
+      "isTrusted": true,
+      "perf": 399249.2999999523,
+      "wall": "2026-10-19T18:08:40.946Z",
+      "hidden": true,
+      "visibility": "hidden",
+      "focus": false
+    },
+    "actual_visible_event": {
+      "type": "visibilitychange",
+      "isTrusted": true,
+      "perf": 480801.2999999523,
+      "wall": "2026-10-19T18:10:02.498Z",
+      "hidden": false,
+      "visibility": "visible",
+      "focus": false
+    },
+    "cursor_before_hidden": 104.18439999985695,
+    "cursor_when_hidden": 248.4764999998808,
+    "first_real_frame_after_return": {
+      "frameTime": 480797.5,
+      "perf": 480805.09999990463,
+      "wall": "2026-10-19T18:10:02.502Z",
+      "hidden": false,
+      "visibility": "visible",
+      "focus": false,
+      "webgl2": true,
+      "contextLost": false,
+      "mode": "REPLAY",
+      "status": "PLAYING",
+      "cursor": 248.4764999998808,
+      "rate": 1,
+      "session": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+      "sequence": 248,
+      "snapshotTime": 248,
+      "timestamp": "2026-10-19T16:21:38.827674+00:00",
+      "destroyed": false,
+      "positions": [
+        {
+          "id": "TRUCK_001",
+          "position": {
+            "x": -2177565.678447642,
+            "y": 4389289.458481979,
+            "z": 4069645.506593052
+          }
+        },
+        {
+          "id": "TRUCK_002",
+          "position": {
+            "x": -2177909.0072947266,
+            "y": 4389255.738078989,
+            "z": 4069497.1233862205
+          }
+        },
+        {
+          "id": "TRUCK_003",
+          "position": {
+            "x": -2178319.3464144305,
+            "y": 4388965.1976008965,
+            "z": 4069597.3459038907
+          }
+        }
+      ]
+    }
+  },
+  "controlled_gap": {
+    "classification": "CONTROLLED_GAP_FIXTURE",
+    "not_production_recording": true,
+    "sources": [
+      {
+        "private_evidence_id": "PRIVATE-009",
+        "available_in_public_snapshot": false
+      },
+      {
+        "private_evidence_id": "PRIVATE-010",
+        "available_in_public_snapshot": false
+      }
+    ],
+    "session_id": "4577b401-8239-4dfe-8cd9-10c0284cc65e",
+    "creation": "HistoryStore begin(seq0), FleetSimulator.step(1), append(seq1), FleetSimulator.step(3), append(seq2), finish COMPLETED, close",
+    "database_sha256": "72a1cca325d97ced3c91a279d736c234cd0513c38ee90bf1f8f3fb8fde59ac89",
+    "state": "COMPLETED",
+    "snapshot_count": 3,
+    "sequence": [
+      0,
+      1,
+      2
+    ],
+    "simulation_time_seconds": [
+      0,
+      1,
+      4
+    ],
+    "snapshots": [
+      {
+        "schema_version": 1,
+        "session_id": "4577b401-8239-4dfe-8cd9-10c0284cc65e",
+        "sequence": 0,
+        "timestamp": "2026-10-20T10:00:36.593096+00:00",
+        "simulation_time_seconds": 0.0,
+        "vehicles": [
+          {
+            "vehicle_id": "TRUCK_001",
+            "timestamp": "2026-10-20T10:00:36.593096+00:00",
+            "longitude": 116.39,
+            "latitude": 39.9,
+            "height": 50.0,
+            "heading": 124.70016376658535,
+            "speed": 25.0,
+            "soc": 90.0,
+            "load": 65.0,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_002",
+            "timestamp": "2026-10-20T10:00:36.593096+00:00",
+            "longitude": 116.396,
+            "latitude": 39.90148589153059,
+            "height": 54.99059435251935,
+            "heading": 0.0,
+            "speed": 25.0,
+            "soc": 80.0,
+            "load": 40.0,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_003",
+            "timestamp": "2026-10-20T10:00:36.593096+00:00",
+            "longitude": 116.38833122058874,
+            "latitude": 39.90283280979934,
+            "height": 52.66561191213541,
+            "heading": 252.01674414076572,
+            "speed": 25.0,
+            "soc": 70.0,
+            "load": 80.0,
+            "status": "running"
+          }
+        ]
+      },
+      {
+        "schema_version": 1,
+        "session_id": "4577b401-8239-4dfe-8cd9-10c0284cc65e",
+        "sequence": 1,
+        "timestamp": "2026-10-20T10:00:36.632986+00:00",
+        "simulation_time_seconds": 1.0,
+        "vehicles": [
+          {
+            "vehicle_id": "TRUCK_001",
+            "timestamp": "2026-10-20T10:00:36.632986+00:00",
+            "longitude": 116.39006676138096,
+            "latitude": 39.89996439474063,
+            "height": 50.04450709280658,
+            "heading": 124.70020661041745,
+            "speed": 25.0,
+            "soc": 89.9,
+            "load": 65.0,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_002",
+            "timestamp": "2026-10-20T10:00:36.632986+00:00",
+            "longitude": 116.39596162722445,
+            "latitude": 39.901538373837546,
+            "height": 55.02558239391963,
+            "heading": 322.39761765521615,
+            "speed": 25.0,
+            "soc": 79.9,
+            "load": 40.0,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_003",
+            "timestamp": "2026-10-20T10:00:36.632986+00:00",
+            "longitude": 116.38825398031796,
+            "latitude": 39.902813499967856,
+            "height": 52.62699185887809,
+            "heading": 252.01669458752986,
+            "speed": 25.0,
+            "soc": 69.9,
+            "load": 80.0,
+            "status": "running"
+          }
+        ]
+      },
+      {
+        "schema_version": 1,
+        "session_id": "4577b401-8239-4dfe-8cd9-10c0284cc65e",
+        "sequence": 2,
+        "timestamp": "2026-10-20T10:00:36.646077+00:00",
+        "simulation_time_seconds": 4.0,
+        "vehicles": [
+          {
+            "vehicle_id": "TRUCK_001",
+            "timestamp": "2026-10-20T10:00:36.646077+00:00",
+            "longitude": 116.39026704510927,
+            "latitude": 39.89985757873066,
+            "height": 50.17802837121362,
+            "heading": 124.70033507581323,
+            "speed": 25.0,
+            "soc": 89.60000000000001,
+            "load": 65.0,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_002",
+            "timestamp": "2026-10-20T10:00:36.646077+00:00",
+            "longitude": 116.39581297650749,
+            "latitude": 39.90168702814209,
+            "height": 55.124684708094435,
+            "heading": 322.3975223078752,
+            "speed": 25.0,
+            "soc": 79.60000000000001,
+            "load": 40.0,
+            "status": "running"
+          },
+          {
+            "vehicle_id": "TRUCK_003",
+            "timestamp": "2026-10-20T10:00:36.646077+00:00",
+            "longitude": 116.38802225976579,
+            "latitude": 39.902755570164295,
+            "height": 52.51113169911581,
+            "heading": 252.01654593533192,
+            "speed": 25.0,
+            "soc": 69.60000000000001,
+            "load": 80.0,
+            "status": "running"
+          }
+        ]
+      }
+    ],
+    "gap_interval": [
+      1,
+      4
+    ],
+    "gap_frames": 321,
+    "gap_frames_preserved_sequence": 1,
+    "gap_end_sequence": 2,
+    "gap_end_simulation_time": 4,
+    "no_interpolation_extrapolation_or_invented_sequence": true,
+    "quota_bytes": 16777216
+  },
+  "lifecycle_and_camera": {
+    "sources": [
+      {
+        "private_evidence_id": "PRIVATE-011",
+        "available_in_public_snapshot": false
+      },
+      {
+        "private_evidence_id": "PRIVATE-012",
+        "available_in_public_snapshot": false
+      },
+      {
+        "private_evidence_id": "PRIVATE-013",
+        "available_in_public_snapshot": false
+      }
+    ],
+    "human_disposition": "CONDITIONALLY ACCEPTED",
+    "old_run_chrome_pid": 45660,
+    "old_complete_roundtrips": 9,
+    "old_tenth_outbound": "PASS;return interrupted,not counted",
+    "new_run_chrome_pid": 77560,
+    "new_complete_roundtrips": 1,
+    "cumulative_across_runs": 10,
+    "single_process_continuous_ten_claimed": false,
+    "maximum_simultaneously_valid_viewers": 1,
+    "live_fleet_ws": 1,
+    "replay_fleet_ws": 0,
+    "camera": [
+      {
+        "check": "stop_tracking_immediate",
+        "start": "2026-10-20T18:11:01.167900+00:00",
+        "end": "2026-10-20T18:11:03.660795+00:00",
+        "real_raf_frames": 359,
+        "observed_sequences": [
+          33,
+          34,
+          35,
+          36
+        ],
+        "visible_and_healthy": true,
+        "max_position_error_all_frames_m": 0.0,
+        "max_direction_error_all_frames_rad": 1.249000902703301e-16,
+        "max_up_error_all_frames_rad": 4.659991345506772e-15,
+        "frustum_unchanged_between_recorded_frames": true
+      },
+      {
+        "check": "pause_releases_tracking",
+        "start": "2026-10-20T18:11:04.506270+00:00",
+        "end": "2026-10-20T18:11:07.496680+00:00",
+        "real_raf_frames": 430,
+        "observed_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "visible_and_healthy": true,
+        "max_position_error_all_frames_m": 0.0,
+        "max_direction_error_all_frames_rad": 1.6478959984131285e-16,
+        "max_up_error_all_frames_rad": 3.931713519738887e-14,
+        "frustum_unchanged_between_recorded_frames": true
+      },
+      {
+        "check": "seek_releases_tracking",
+        "start": "2026-10-20T18:11:07.851522+00:00",
+        "end": "2026-10-20T18:11:11.040627+00:00",
+        "real_raf_frames": 459,
+        "observed_sequences": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "visible_and_healthy": true,
+        "max_position_error_all_frames_m": 0.0,
+        "max_direction_error_all_frames_rad": 1.1775693440128312e-16,
+        "max_up_error_all_frames_rad": 2.530395533138393e-15,
+        "frustum_unchanged_between_recorded_frames": true
+      },
+      {
+        "check": "buffering_releases_tracking",
+        "start": "2026-10-20T18:11:12.474620+00:00",
+        "end": "2026-10-20T18:11:15.594077+00:00",
+        "real_raf_frames": 449,
+        "observed_sequences": [
+          59,
+          60,
+          61,
+          62
+        ],
+        "visible_and_healthy": true,
+        "max_position_error_all_frames_m": 0.0,
+        "max_direction_error_all_frames_rad": 1.1535589208683826e-14,
+        "max_up_error_all_frames_rad": 2.4211783217437293e-14,
+        "frustum_unchanged_between_recorded_frames": true
+      }
+    ],
+    "strictmode": "Real dev setup/cleanup/setup;not HMR",
+    "chrome_fatal": "NOT VERIFIED;human D2 entry waiver only",
+    "limitations": [
+      "Retained socket callback probe uses genuine old frame in syntheticMessageEvent,not natural late wire packet.",
+      "Old HTTPresponse may be canceled beforeJSdelivery;ignored-AbortSignal retains automated evidence.",
+      "Synchronous construction reentry/cleanup-failure barriers not all forced again inChrome."
+    ]
+  },
+  "production_preview": {
+    "source": {
+      "private_evidence_id": "PRIVATE-014",
+      "available_in_public_snapshot": false
+    },
+    "build_source": {
+      "private_evidence_id": "PRIVATE-015",
+      "available_in_public_snapshot": false
+    },
+    "dist_manifest": {
+      "private_evidence_id": "PRIVATE-016",
+      "available_in_public_snapshot": false
+    },
+    "checks": [
+      {
+        "kind": "preview_default_live_three_cars_and_ws",
+        "status": "PASS",
+        "rate": null
+      },
+      {
+        "kind": "production_terminal_history_saved_scene_16_entities",
+        "status": "PASS",
+        "rate": null
+      },
+      {
+        "kind": "production_play_pause_rate",
+        "status": "PASS",
+        "rate": 0.5
+      },
+      {
+        "kind": "production_play_pause_rate",
+        "status": "PASS",
+        "rate": 1
+      },
+      {
+        "kind": "production_play_pause_rate",
+        "status": "PASS",
+        "rate": 2
+      },
+      {
+        "kind": "production_play_pause_rate",
+        "status": "PASS",
+        "rate": 4
+      },
+      {
+        "kind": "production_seek",
+        "status": "PASS",
+        "rate": null
+      },
+      {
+        "kind": "production_reverse_seek",
+        "status": "PASS",
+        "rate": null
+      },
+      {
+        "kind": "production_complete_live_replay_live_roundtrip",
+        "status": "PASS",
+        "rate": null
+      },
+      {
+        "kind": "four_cesium_resource_categories",
+        "status": "PASS",
+        "rate": null
+      }
+    ],
+    "chrome_version": "155.0.8059.40",
+    "viewer_count_over_lifecycle": 3,
+    "maximum_simultaneous_viewers": 1,
+    "entities": 16,
+    "one_roundtrip": "PASS",
+    "resources": [
+      {
+        "category": "Assets",
+        "url": "http://127.0.0.1:5173/cesium/Assets/Textures/moonSmall.jpg",
+        "status": 200,
+        "mime": "image/jpeg",
+        "bytes": 18196,
+        "magic": [
+          255,
+          216,
+          255,
+          224,
+          0,
+          16,
+          74,
+          70,
+          73,
+          70,
+          0,
+          1
+        ],
+        "sha256": "380fa69424e1cd2268816e346dc56393bd1c809b8e0cb078e705ec469a5847db"
+      },
+      {
+        "category": "ThirdParty",
+        "url": "http://127.0.0.1:5173/cesium/ThirdParty/basis_transcoder.wasm",
+        "status": 200,
+        "mime": "application/wasm",
+        "bytes": 500839,
+        "magic": [
+          0,
+          97,
+          115,
+          109,
+          1,
+          0,
+          0,
+          0,
+          1,
+          132,
+          3,
+          35
+        ],
+        "sha256": "96849a2719b431008533806199ad4e513ef5a5f632b87e452fb1eea961d5730e"
+      },
+      {
+        "category": "Widgets",
+        "url": "http://127.0.0.1:5173/cesium/Widgets/widgets.css",
+        "status": 200,
+        "mime": "text/css",
+        "bytes": 30710,
+        "magic": [
+          47,
+          42,
+          32,
+          112,
+          97,
+          99,
+          107,
+          97,
+          103,
+          101,
+          115,
+          47
+        ],
+        "sha256": "702c5adf3d16ec7f1c03cc5fb7ecb823af6c59fa192789fb2c859ac7a11f4a0c"
+      },
+      {
+        "category": "Workers",
+        "url": "http://127.0.0.1:5173/cesium/Workers/createGeometry.js",
+        "status": 200,
+        "mime": "text/javascript",
+        "bytes": 5801,
+        "magic": [
+          47,
+          42,
+          42,
+          10,
+          32,
+          42,
+          32,
+          64,
+          108,
+          105,
+          99,
+          101
+        ],
+        "sha256": "39d52d5d79d346ae342b791a887722e71f6681d74dea0fc206c4d4fc4ac5fbb6"
+      }
+    ],
+    "model_database_matches": [
+      {
+        "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+        "sequence": 0,
+        "simulation_time_seconds": 0,
+        "timestamp": "2026-10-19T16:17:29.001621+00:00",
+        "sqlite_payload_sha256": "3b3281ae45cdb693ba9c2681732e65f345e37a91c61be162f433cc4ac66afb64",
+        "model_equals_stored_payload": true
+      },
+      {
+        "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+        "sequence": 100,
+        "simulation_time_seconds": 100,
+        "timestamp": "2026-10-19T16:19:09.694078+00:00",
+        "sqlite_payload_sha256": "f406dd08122c2b20a5224883e6ba543ea1c5b8b2eb59e06a69c80d362c071c57",
+        "model_equals_stored_payload": true
+      },
+      {
+        "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+        "sequence": 10,
+        "simulation_time_seconds": 10,
+        "timestamp": "2026-10-19T16:17:39.078467+00:00",
+        "sqlite_payload_sha256": "0eb5cb6c6e3f12c2a816ed1ce63ec4c6f5288038e4abb1fd2789fae09b6d0a7a",
+        "model_equals_stored_payload": true
+      }
+    ],
+    "normal_shutdown": {
+      "backend_exit_codes": [
+        0,
+        0
+      ],
+      "preview_exit_code": 0,
+      "chrome_exit_code": 0
+    },
+    "nonblocking": "favicon.ico404; Vite bundle/timing/future native-config warnings retained"
+  },
+  "risk_register": [
+    {
+      "id": "RECORDER_START_TIMEOUT_UNRESOLVED",
+      "root_cause": "UNKNOWN",
+      "status": "UNRESOLVED",
+      "facts": "Task4/Task7 full backend runs had unexpected START_TIMEOUT; later targeted andStageA/B passes are not production fixes.",
+      "impact": "Recording may be disabled for a run while realtime continues; check seq0/RECORDING.",
+      "required_decision": "Human residual-risk decision before final integration."
+    },
+    {
+      "id": "SHUTDOWN_UNRESOLVED",
+      "root_cause": "UNKNOWN",
+      "status": "UNRESOLVED",
+      "facts": "StageC process remained alive210.4545951s after stop request;listener closed;WinError10054 logged without proven causality.",
+      "impact": "Exit and recording/resource release may remain unconfirmed. Later normal exits do not close this risk."
+    },
+    {
+      "id": "CHROME_FATAL_NOT_VERIFIED",
+      "status": "NOT VERIFIED",
+      "facts": "Task7/8 real Cesium public-object tests exist; controlled Chrome collectionChanged fatal injection did not complete.",
+      "exception": "Human limited D2 admission exception;never Chrome fatal PASS."
+    }
+  ],
+  "recovery": {
+    "source": {
+      "private_evidence_id": "PRIVATE-017",
+      "available_in_public_snapshot": false
+    },
+    "events": [
+      {
+        "kind": "prior_completed_readable",
+        "utc": "2026-10-19T16:23:17.349870+00:00",
+        "session": {
+          "session_id": "91e8cf3d-9fb1-4ec2-9778-ee3ebbaba5fc",
+          "state": "COMPLETED",
+          "started_utc": "2026-10-19T16:17:29.001621+00:00",
+          "ended_utc": "2026-10-19T16:21:50.703086+00:00",
+          "snapshot_count": 260,
+          "last_sequence": 259,
+          "first_simulation_time": 0.0,
+          "last_simulation_time": 259.0,
+          "failure_code": null,
+          "failure_message": null,
+          "first_sequence": 0,
+          "incomplete": false,
+          "storage_version": 1,
+          "fleet_schema_version": 1,
+          "code_revision": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+          "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+          "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+          "vehicle_configs": [
+            {
+              "cruise_speed_kmh": 25.0,
+              "initial_progress_fraction": 0.0,
+              "initial_soc": 90.0,
+              "load": 65.0,
+              "parking": null,
+              "route_id": "ROUTE_001",
+              "soc_rate": 0.1,
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "cruise_speed_kmh": 25.0,
+              "initial_progress_fraction": 0.3333333333333333,
+              "initial_soc": 80.0,
+              "load": 40.0,
+              "parking": {
+                "duration_seconds": 15.0,
+                "period_seconds": 120.0,
+                "start_seconds": 60.0
+              },
+              "route_id": "ROUTE_001",
+              "soc_rate": 0.1,
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "cruise_speed_kmh": 25.0,
+              "initial_progress_fraction": 0.6666666666666666,
+              "initial_soc": 70.0,
+              "load": 80.0,
+              "parking": {
+                "duration_seconds": 20.0,
+                "period_seconds": 120.0,
+                "start_seconds": 90.0
+              },
+              "route_id": "ROUTE_001",
+              "soc_rate": 0.1,
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "interrupted_prefix_readable",
+        "utc": "2026-10-19T16:23:18.723967+00:00",
+        "session": {
+          "session_id": "ee24aa52-769d-4589-a9b7-4a372d90bc7d",
+          "state": "INTERRUPTED",
+          "started_utc": "2026-10-19T16:23:14.215938+00:00",
+          "ended_utc": "2026-10-19T16:23:18.313290+00:00",
+          "snapshot_count": 4,
+          "last_sequence": 3,
+          "first_simulation_time": 0.0,
+          "last_simulation_time": 3.0,
+          "failure_code": "UNCLEAN_SHUTDOWN",
+          "failure_message": "Recording ended without a confirmed shutdown",
+          "first_sequence": 0,
+          "incomplete": true,
+          "storage_version": 1,
+          "fleet_schema_version": 1,
+          "code_revision": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+          "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+          "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+          "vehicle_configs": [
+            {
+              "cruise_speed_kmh": 25.0,
+              "initial_progress_fraction": 0.0,
+              "initial_soc": 90.0,
+              "load": 65.0,
+              "parking": null,
+              "route_id": "ROUTE_001",
+              "soc_rate": 0.1,
+              "vehicle_id": "TRUCK_001"
+            },
+            {
+              "cruise_speed_kmh": 25.0,
+              "initial_progress_fraction": 0.3333333333333333,
+              "initial_soc": 80.0,
+              "load": 40.0,
+              "parking": {
+                "duration_seconds": 15.0,
+                "period_seconds": 120.0,
+                "start_seconds": 60.0
+              },
+              "route_id": "ROUTE_001",
+              "soc_rate": 0.1,
+              "vehicle_id": "TRUCK_002"
+            },
+            {
+              "cruise_speed_kmh": 25.0,
+              "initial_progress_fraction": 0.6666666666666666,
+              "initial_soc": 70.0,
+              "load": 80.0,
+              "parking": {
+                "duration_seconds": 20.0,
+                "period_seconds": 120.0,
+                "start_seconds": 90.0
+              },
+              "route_id": "ROUTE_001",
+              "soc_rate": 0.1,
+              "vehicle_id": "TRUCK_003"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "controlled_sqlite_failure_isolated",
+        "utc": "2026-10-19T16:23:26.500053+00:00",
+        "health": {
+          "status": "healthy"
+        },
+        "status": {
+          "enabled": true,
+          "state": "FAILED",
+          "session_id": "80a30088-57de-470e-b136-366554df943b",
+          "last_offered_sequence": 2,
+          "last_persisted_sequence": 1,
+          "error_code": "WRITE_FAILED",
+          "error_message": "History recording failed; inspect diagnostics"
+        }
+      }
+    ],
+    "capacity_boundary": "Controlled TEMP SQLite abort trigger,NOT actual512MiB exhaustion."
+  },
+  "runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+  "export_source_commit": "c345b0e6f10983d0e7713d65be4b9ea6250b80c7",
+  "public_repository_commit": null,
+  "public_edition_date": "2026-10-22",
+  "upstream_samples_exact_sha256": "8981533d03d557dbe53da2b6a8d4f082de6246d2d02897607d10f1eaa4048c42"
+}

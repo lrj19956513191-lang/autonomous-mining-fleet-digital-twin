@@ -1,0 +1,40 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Keep status/detail reflow inside stable UI regions so Cesium's viewport does not resize. */
+.app > header {
+  flex: 0 0 clamp(160px, 22vh, 220px);
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.cesium-container {
+  flex: 1;
+  min-height: 320px;
+  width: 100%;
+}
+
+.fleet-panel {
+  flex: 0 0 clamp(180px, 28vh, 300px);
+  padding: 0 1rem;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+.fleet-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fleet-information { display: flex; flex-wrap: wrap; gap: 1.5rem; max-height: 260px; overflow: auto; }
+.fleet-information ul { padding-left: 1.25rem; }
+.fleet-information p { margin: 0.5rem 0; }
