@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "scope": "Current portfolio UI delivery files, excluding this manifest; not a replacement for historical Phase2D acceptance",
+  "runtime_source_commit": "7f6ac4dacb6c236d582fbaff1d7fa83b2bf3c8cf",
+  "historical_public_baseline": "d60fd8dac8a7f9df63d679c4b58d347ecb2b07ed",
+  "historical_runtime_source_head": "39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c",
+  "historical_export_source_commit": "c345b0e6f10983d0e7713d65be4b9ea6250b80c7",
+  "historical_manifest": {
+    "path": "docs/phase2d-evidence/manifest.json",
+    "git_baseline": "d60fd8dac8a7f9df63d679c4b58d347ecb2b07ed",
+    "exact_sha256": "33fb9118e4c59d707b8c91c33c649d0fdb9dc975ae949a1860055972e4c4f702",
+    "entries": 94,
+    "unchanged": true
+  },
+  "delivery_commit_identity": "The Git commit that contains this manifest; intentionally not embedded to avoid a self-reference cycle",
+  "created_utc": "2026-10-22T15:39:20.194341+00:00",
+  "timezone": "Asia/Shanghai",
+  "status": "LOCAL_BRANCH_PREPARED_NOT_MERGED_OR_PUSHED",
+  "test_scope": {
+    "frontend_tests": 1152,
+    "test_files": 23,
+    "test_exit": 0,
+    "typescript_vite_build_exit": 0,
+    "backend_pytest": "NOT_RERUN_THIS_ROUND",
+    "browser_runtime": "real Chrome / WebGL2 / Vite dev",
+    "production_preview": "NOT_RERUN_THIS_ROUND"
+  },
+  "hash_policy": {
+    "utf8-crlf-to-lf": "UTF8;replace CRLF with LF before bytes/SHA;no JSON reserialization",
+    "exact-bytes": "Exact original PNG bytes",
+    "self": "docs/portfolio-ui/manifest.json excluded from files; identified by containing Git commit"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 542,
+      "sha256": "d6aa8474ebc23de49ff3b0d834b070de6bc0d41693f91314b048ffe2907a52b0",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9857,
+      "sha256": "366facfead6efcd924e28c6978d506ff26ca4658ac509bb2d114f1399feea486",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3115,
+      "sha256": "aa20b21f93c7c18c01356ff44986f3779f5eee4ba264ef0511f4480d493659e1",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/data/demo_mine.json",
+      "bytes": 5188,
+      "sha256": "5fa58ea3f7cb9a28b1fc794f97dab0de340cd17d3477568df957556b5a805728",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/history/api.py",
+      "bytes": 3505,
+      "sha256": "0c5597c6600939c8eb752f3411f66b5e439e710994f5d058f85d5b9a899bd2cd",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/history/models.py",
+      "bytes": 9482,
+      "sha256": "14192b20a931bfb558571204c0c68bc9ed0894d0bc3a915c8aea41eda70b52c6",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/history/queries.py",
+      "bytes": 15834,
+      "sha256": "40dcc66d1597b6ea374b2d653ae87a01dd97c72394b60e61f336b11c43651c84",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/history/recorder.py",
+      "bytes": 11736,
+      "sha256": "68a042c4c56d582a5dd97094dd76b8769e8a68226878c581452a72c86e795a37",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/history/settings.py",
+      "bytes": 1233,
+      "sha256": "f2bcb23e53051a5862c800bc47474913d4d82394eb3c36a54dce5473c324341a",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/history/store.py",
+      "bytes": 14216,
+      "sha256": "bf88ff6ca0ba290245d7855a8d19fd7cb6c0b753ce07f24706ccd4e60e2ed5c6",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/main.py",
+      "bytes": 4752,
+      "sha256": "926574717a1660d67bb83d03af5244eb77539462a757667f3b362ef890b448c8",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/realtime/fleet_updates.py",
+      "bytes": 1681,
+      "sha256": "c1f7a0c4f347d47d2531a992178b71e0de97643f7882209031e420b2c9c98534",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/realtime/streams.py",
+      "bytes": 6752,
+      "sha256": "5e461e7a64364f1aa54f8ab87a1b141f4a552e6521210008dbff64d56c27dfbb",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 53,
+      "sha256": "3da6c22c38fde364e9ab63ecc5570e89ec5a57746763a1c43dc2f85c7705be9e",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/scene/loader.py",
+      "bytes": 17406,
+      "sha256": "31a4c48a72275b37f89017747757ec9491e9913a60cbdf5a441e94af4bbfa4f7",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/simulation/fleet.py",
+      "bytes": 10356,
+      "sha256": "c62e40ff54d3fee60e9f0c2dd24618b9a5ee09417e3a436196c9cb3609d12f71",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/simulation/fleet_config.py",
+      "bytes": 8056,
+      "sha256": "4794704600788a97bed5d3ccc263864c7fab4fdbbe3acb25cd1442b7bfba132f",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/simulation/route_geometry.py",
+      "bytes": 3891,
+      "sha256": "35b8fd99bde72a448025af1b28a439e6a059f96365b149e997ca5bbe67014e5d",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/simulation/route_motion.py",
+      "bytes": 2019,
+      "sha256": "26fe7caaf21ac0abf21cc345f822d214e063acfa8a0a05498772172318110c46",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/conftest.py",
+      "bytes": 826,
+      "sha256": "5a54dd3b6ef8b99727cc7fdd8338d6dde07163c95cb1eb61aeb13e9389ed527f",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_fleet.py",
+      "bytes": 27433,
+      "sha256": "a8c72a90eb8d8806e744829b841d106b4d0e69e02ee6e28ceffcb1c2400736b3",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_fleet_api.py",
+      "bytes": 8318,
+      "sha256": "faa699a205feff604efb9d7b38b397751c234b6d1fbc050ba5f0ba6c7f0272aa",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_fleet_config.py",
+      "bytes": 11910,
+      "sha256": "a523c3ed60cad420edb12f23ea5a1de082beb34256540687814e6c04cb6fdc08",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_fleet_websocket.py",
+      "bytes": 11112,
+      "sha256": "96df8640e9e362912936dfaaf3822957b92da50ecac76a2d92939abd18bebce7",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_history_api.py",
+      "bytes": 22223,
+      "sha256": "c58e743fb8f51bf8ab66b3a4b8d034e8d46b33e0fef7f69d6ea1b0bd122aa070",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_history_integration.py",
+      "bytes": 23080,
+      "sha256": "0c47cfcfdf0527a99a2c1db8b451574d76ee40b8da39ed0f2dd51ebd605c0c70",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_history_recorder.py",
+      "bytes": 26779,
+      "sha256": "6284389a9f4a7ac62207095fbd5c4060c13cc211a4408d647e88c6876abfef05",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_history_store.py",
+      "bytes": 22939,
+      "sha256": "d09623615cf5db60db7c56e0474b0ac177bdde8e2a70f63a2154f6be1d2ca532",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_route_geometry.py",
+      "bytes": 10391,
+      "sha256": "3061b9b1c42fe1b2c14c348e96f69464440b0a1c04ea7cdad409a2efc0626184",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_route_motion.py",
+      "bytes": 19443,
+      "sha256": "2e624f7a8603046be92d2294e45b25e1b036ec484c149113e512f3788794638e",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_scene_api.py",
+      "bytes": 16888,
+      "sha256": "cba4ea1cb7ebf7a54120ffa1efb6be47ffa60a11cc52f7a6aecff3675f09f4a5",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_scene_loader.py",
+      "bytes": 35860,
+      "sha256": "7a4ecc8db1d13a059adf1811594b913ff4044f933b9166144cb9c0d389567f58",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_stream_supervision.py",
+      "bytes": 21459,
+      "sha256": "556ee660b05c6f30cddddf44c574c4dc404d76915477fa9980bf49dcf92c9a7e",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_vehicle_api.py",
+      "bytes": 4318,
+      "sha256": "3ac18958d9a33f0fbeff5764be8fbf6d64cfe48029342d98b3b211fa55f64ba5",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_vehicle_simulator.py",
+      "bytes": 3339,
+      "sha256": "817f6f819ac4523f0cd0a65e05ae4958fcf48947b6f83e5a2bc984f216ce2a56",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "backend/tests/test_vehicle_websocket.py",
+      "bytes": 6589,
+      "sha256": "7f100dcbb7acd94c330429eaf4a9d6f676f4b02cb8663031c8ab8086c359c7e1",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "docs/phase2d-evidence/acceptance-samples.json",
+      "bytes": 56901,
+      "sha256": "0c94ba7caf97e42813cccfdd65baa1cdaa99094d8688f04835a8b3531067cc11",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "docs/phase2d-evidence/manifest.json",
+      "bytes": 82144,
+      "sha256": "fddf7010ba3d8d451b6a54fc1581412a0f260fde9e24267033e4342a7cb6b600",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "docs/phase2d-evidence/preview-live-return.png",
+      "bytes": 138911,
+      "sha256": "4a2d69d753f26e16225a51d064c02552ab6177571fb8a51465305736e4095ccc",
+      "hash_mode": "exact-bytes"
+    },
+    {
+      "path": "docs/phase2d-evidence/preview-live.png",
+      "bytes": 135749,
+      "sha256": "2a71c5382c49e3c3cb3ff84956616f7e6261b31fc09fdd10ae9fa6bedc733545",
+      "hash_mode": "exact-bytes"
+    },
+    {
+      "path": "docs/phase2d-evidence/preview-replay.png",
+      "bytes": 153233,
+      "sha256": "7dd6111dbc845172408013e3b9e8210dcc272e0bfce377cb5e696586b235c75f",
+      "hash_mode": "exact-bytes"
+    },
+    {
+      "path": "docs/phase2d-validation.txt",
+      "bytes": 10419,
+      "sha256": "fce7c752afef86ad77c3b47116811c348450372b7e2c757091c7e7f440226c67",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "docs/portfolio-ui/browser-samples.json",
+      "bytes": 15105,
+      "sha256": "e9129297d53bac9c0aac3165bc14b85865c7eb302fb0818e560062d1fd50a7fd",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "docs/portfolio-ui/live.png",
+      "bytes": 95191,
+      "sha256": "6e309aaa131920438a3a189202f22e56a203704376b867f019a6bb458fd792c4",
+      "hash_mode": "exact-bytes"
+    },
+    {
+      "path": "docs/portfolio-ui/replay.png",
+      "bytes": 96030,
+      "sha256": "484f3ed9a6a0bcc25d5aa94d45e295611911b2ccdf802c5b86175e3ae7d126a5",
+      "hash_mode": "exact-bytes"
+    },
+    {
+      "path": "docs/portfolio-ui/validation.md",
+      "bytes": 5780,
+      "sha256": "0b9dd963a4b2fe4a44a0282e159b45ef798b574bc28bd0af65920135c265c330",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "docs/portfolio-ui/verify.py",
+      "bytes": 1872,
+      "sha256": "fdaccea0407daafacf806a8f10b88f2083fe6171f0386110772814ac9831cf9c",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 323,
+      "sha256": "f2d74a568debb6e18439943760d83aafbb965fe5bcacd0ad2a3122965bc206e7",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 75150,
+      "sha256": "4f4988b8c90e3d7e20855308601cada4688488fd86ebe2307d35e7e31e334013",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 655,
+      "sha256": "a720b7e7d7674c13c8a47f2b5a1b45b75f4c7ea1f33484648827a33a401cc8c7",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/App.test.ts",
+      "bytes": 62124,
+      "sha256": "8f1f9cfb5779dfce1fcc2d46126efe295791308bd1abdffcd5af6098909c96a4",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "bytes": 25369,
+      "sha256": "efdc47c066a0973680e51310fd8e46bd16f18064c38e5258c16191e1062c189a",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/backendConnection.test.ts",
+      "bytes": 4542,
+      "sha256": "5aa7f12c176ed96b74efcb1731a22e694f91af5129037e1892febb9830013bd1",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/backendConnection.ts",
+      "bytes": 1948,
+      "sha256": "1428b563632344a519307e2865309d92e7442726640a46de14a0b652005a6d69",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/bootstrap.test.tsx",
+      "bytes": 392,
+      "sha256": "d8cad9517d7e959d48adaa77b325a9796b7b01016abb8462810171c3697a8040",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/camera.test.ts",
+      "bytes": 1404,
+      "sha256": "5d2c8b6460bfb36e3b895d57ca685ac5e79db08b93b539546019158a0b6f222c",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/camera.ts",
+      "bytes": 420,
+      "sha256": "735c853d51725669f9e556d9b1449caea7116862311fc14864fd8201cc941465",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/fleetCamera.test.ts",
+      "bytes": 20422,
+      "sha256": "a4f21cbd206dc2479b44d4eb4ae5f20655fa7282dd9aea34c7f2fe39dc6c35a0",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/fleetCamera.ts",
+      "bytes": 9222,
+      "sha256": "f3bf5976a964134f6f4c9f00018c1857bc4a3490daa9816c69aeca11cee6edeb",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/viewer.test.ts",
+      "bytes": 6077,
+      "sha256": "3e918aa3ff0ec8334441bf26beffb38c27fe4e10bf7fb629b760a896b80c59de",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/viewer.ts",
+      "bytes": 1886,
+      "sha256": "0a382e0e4d264376ef9c8bf5c37ccbdfea11ad1dbd556d36980cc53f56bb6af4",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/cesium/zoomControl.ts",
+      "bytes": 2277,
+      "sha256": "17d549ed1b6f7e05251864e25d1abd94e77c24b1bbe7a67d2e2c18922ad36269",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/fleetPresentation.test.ts",
+      "bytes": 17647,
+      "sha256": "7d87a6a74c1e077edc17a0cfd1649b42a53616daa9b5a2515188f47913d134c2",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/fleetPresentation.ts",
+      "bytes": 16416,
+      "sha256": "509588aa5fd26eac93743cac6b22a5c6b5c56fba9695caec9ae45c815da55ef4",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/fleetScene.test.ts",
+      "bytes": 49001,
+      "sha256": "5ff0a693dc875a97e6d2be34600118430b84669aef94dd61342f98c54d15c600",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/fleetScene.ts",
+      "bytes": 7907,
+      "sha256": "37374dc3bd019f9eb31d7a4657944a16e05b6ecd60e660b48dd19990ac7b7481",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/HistoryPanel.test.ts",
+      "bytes": 6038,
+      "sha256": "21e212378a75d276654244083fbd9b410305e490f3f4f67955f41d64d6f41d4d",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/HistoryPanel.tsx",
+      "bytes": 10103,
+      "sha256": "81de3c32cc2f676e3276b9a02ccdfbaed4bfc9caad5d4b7d51a4af53f9813ece",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/historyClient.test.ts",
+      "bytes": 23241,
+      "sha256": "ddef5d8e4ae58eefc098f19563ff6f0230d14f2619542074a5f2214a999023f2",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/historyClient.ts",
+      "bytes": 16181,
+      "sha256": "753a0ab627f9d8175f2c71a00fdd3a4d806c347a1e91bfc61596540838eac5ee",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/playbackClock.test.ts",
+      "bytes": 7611,
+      "sha256": "fa258e145770222ac31db8241bcd76185a8c17f4cafeb0ec7c5c233b68ce76b8",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/playbackClock.ts",
+      "bytes": 3586,
+      "sha256": "80e272aa209608282a00f4d7bf2e2ca60069f1e502082b0f738142fac13707c9",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/replayScene.test.ts",
+      "bytes": 27817,
+      "sha256": "8d95d91adef7d5092b4821a21ad9d2b6d7ec22115166a8041d20c4b1e6f62ecd",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/history/replayScene.ts",
+      "bytes": 17156,
+      "sha256": "b84ce8be14482ca62c46d8d3d8f901e4ca796a95e6c37f7178f753df17f85bbe",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "bytes": 282,
+      "sha256": "ce3354ecd5383c4b877b3ad5389ad3981b0dffaed8a3602f45e9eaaddbca4edb",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/portfolioUI.test.tsx",
+      "bytes": 5621,
+      "sha256": "ea73fa413205ccbcd983485272a61cf043dcd3aa48272561bc9d03a0ada3d0c8",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/fleetFixtures.ts",
+      "bytes": 828,
+      "sha256": "5d4a1d61a331613147ad255b264678616f119f1cb64dfc275455b261cec9b06a",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/fleetSocket.test.ts",
+      "bytes": 17077,
+      "sha256": "c53950f78cc288dcd004a9387321ede35ac9dcadfdd8f26c555a0f0c688c61eb",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/fleetSocket.ts",
+      "bytes": 3268,
+      "sha256": "ad9271f71b17f0b19ccdf697a60ae886b58c7e7c3e7718480de3c6db80464d46",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/fleetTelemetry.test.ts",
+      "bytes": 12316,
+      "sha256": "a3974ab33a4dd442afa53a871b72b5d286f846328eedccc8096d6fe49369b8a1",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/fleetTelemetry.ts",
+      "bytes": 4139,
+      "sha256": "0a031bf1acb8cebca3ca16bef0b5d173f258d40c2f6777a191305908783cda68",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/telemetryGuards.ts",
+      "bytes": 1095,
+      "sha256": "a8d7ffdcb3e21635079dc68e0126ea8dfd3f98eb5a8cbdd96827f16baf283b10",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/vehicleSocket.test.ts",
+      "bytes": 9667,
+      "sha256": "eb3793e5e41a26099855488a4d0d3227c73d6abdffd0ff37d4e8baebe009e5e4",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/vehicleSocket.ts",
+      "bytes": 2331,
+      "sha256": "1daf041166d86e50eccd39df79b3ca8388045e21b6200ff5bd7626eef553e2ac",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/vehicleTelemetry.test.ts",
+      "bytes": 5895,
+      "sha256": "5a896e8ca534a7c59e7908526e43e6fd2e175d7145c1479dff249643356dfcf7",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/realtime/vehicleTelemetry.ts",
+      "bytes": 1314,
+      "sha256": "62e5161fdfdda64401cccd0fd0818efeaf9040d01cc789df3c1ffd9e808a46f5",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/scene/sceneClient.test.ts",
+      "bytes": 14322,
+      "sha256": "a7cec7590cd7c75d827174be3213ade883dc604e9b3d7b04d813c53e9b5e6d5b",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/scene/sceneClient.ts",
+      "bytes": 11053,
+      "sha256": "530b584ca20ecc85732d5ebef862aa4e6b741cfdd78e582b13fbd93a56c903e8",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/scene/sceneFixtures.ts",
+      "bytes": 329,
+      "sha256": "c7b132dabbb3569453cc68255600e5730d9d4d96e9ac2119d4829bd835759067",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/scene/sceneRenderer.test.ts",
+      "bytes": 14833,
+      "sha256": "1017d10c5cf3eead3e75b3b0e36ebee6d2d811098c454c08aa88f227c0815239",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/scene/sceneRenderer.ts",
+      "bytes": 3584,
+      "sha256": "f7768c049373549465b4364776b635dbf056594229c95992c9303b6092ee32bb",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "bytes": 13049,
+      "sha256": "bfd1d62b62ea6996b343db3f14666d1b95f026a78c5aba9218b9077920812a5d",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vehicle/fleetEntities.test.ts",
+      "bytes": 35528,
+      "sha256": "581415a0ed512b1b5916b14f9973c4479dccace381701e6bcf1645bc36417062",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vehicle/fleetEntities.ts",
+      "bytes": 14996,
+      "sha256": "87d5d4768b04a34c1f446c8f2c3ff6847935dda8ea6ea7cf1eb183264e4a71da",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vehicle/fleetInteraction.test.ts",
+      "bytes": 18953,
+      "sha256": "9cec88bdd410594e395de49d841cd7dc8bb7435d402358c7add061b8d9e82933",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vehicle/fleetInteraction.ts",
+      "bytes": 6835,
+      "sha256": "23321434ccd7242fb6992cdf8eadc6781c08df063b8b672f707e1fc05f2ab584",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vehicle/vehicleEntity.test.ts",
+      "bytes": 6611,
+      "sha256": "6b9126153d33ce3f80c62f6ab6c316e0a9f45508b0d6e1a3ecf405d0a8acf30a",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vehicle/vehicleEntity.ts",
+      "bytes": 1089,
+      "sha256": "b798be9262a808276bdf2905641349303d158096bb082b8df502f1ba09b52ef6",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/src/viteConfig.test.ts",
+      "bytes": 2778,
+      "sha256": "9a6b8d2f0a3d9448b2af9179fcf554bb74721c9ad9795e1917d4fd18b8b6e052",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "bytes": 301,
+      "sha256": "1dd641af99b303e227aad0e093e2ae21966828cca7a1cf30474bb28c9c0ec77c",
+      "hash_mode": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "bytes": 1360,
+      "sha256": "0148048ad260c3a5972abd5d18945e0660deac0b0798db36893d7fdc3a80da8d",
+      "hash_mode": "utf8-crlf-to-lf"
+    }
+  ],
+  "private_raw_evidence": [
+    {
+      "source_id": "UI-RAW-001",
+      "filename": "frontend-test.log",
+      "bytes": 670,
+      "sha256": "c72fa66b0b50cd1c2eaba5e3465897cbe6c64931986b6c4c33b1167e94ac2510",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-002",
+      "filename": "build.log",
+      "bytes": 1202,
+      "sha256": "58e138e0dd58eb3e44797208a08477bf9b22cafc1cd266a0fbef0a33c1342fcb",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-003",
+      "filename": "test-result.json",
+      "bytes": 153,
+      "sha256": "554dfddf4fb789296c4c593e4e32d7a42b149b1a20928cb084a3767fab9a2171",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-004",
+      "filename": "browser-run.log",
+      "bytes": 1937,
+      "sha256": "47d831927156517d67d0c2430a3257912d0448c87a38577a75638ec00d360636",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-005",
+      "filename": "browser-result.json",
+      "bytes": 12438,
+      "sha256": "eaeba168af5c856bd3a2c0f7df07f0e4e73b8acde1f904b3ede6fa4a754cf73f",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-006",
+      "filename": "browser-events.json",
+      "bytes": 36906,
+      "sha256": "e23f007d3643daab8c70980bb564cd8be5aa13598335491a6e14120ee2259112",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-007",
+      "filename": "source-before.json",
+      "bytes": 10735,
+      "sha256": "4cd973b2d43b00b1c10c4b4c4133297eabd5c67f139db0bff454690cd98e5864",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-008",
+      "filename": "backend-observation-snapshot.log",
+      "bytes": 899,
+      "sha256": "ee37ae573ad9578295478309d3d70befce37ca17f23cee114f477c7840892c03",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-009",
+      "filename": "frontend-startup-snapshot.log",
+      "bytes": 153,
+      "sha256": "34df057c08587197e6dbef12a0f99163959580799daf55160d5e8202745ec9fe",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-010",
+      "filename": "services.json",
+      "bytes": 241,
+      "sha256": "3c255c5a7374fde7b7d815ac790123b45bdc13670d66b548955b11817ec8e568",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-011",
+      "filename": "historical-protection.json",
+      "bytes": 683,
+      "sha256": "1fade6ac1ed7c5b9ffee041275b3bf23b307ba6a4cd21b52691085c72cadf0d0",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-012",
+      "filename": "runtime-ownership.json",
+      "bytes": 1556,
+      "sha256": "9ba4491a4eb9fff8be152a34b6d4f69c621aba44abdfd9c750f2e107bcd911fc",
+      "delivered_in_git": false
+    },
+    {
+      "source_id": "UI-RAW-013",
+      "filename": "review-result.json",
+      "bytes": 500,
+      "sha256": "84f16d3e23a5a1ffd95355b6713a3dfb53e879cc0171c28ff39301d180336154",
+      "delivered_in_git": false
+    }
+  ],
+  "raw_evidence_limit": "Private ignored logs and databases are not shipped; public browser-samples is a selected real subset. Active SQLite DB is not copied or hashed during writing.",
+  "risk_register": [
+    {
+      "id": "RECORDER_START_TIMEOUT_UNRESOLVED",
+      "root_cause": "UNKNOWN"
+    },
+    {
+      "id": "SHUTDOWN_UNRESOLVED",
+      "root_cause": "UNKNOWN"
+    },
+    {
+      "id": "CHROME_FATAL_NOT_VERIFIED",
+      "status": "NOT VERIFIED"
+    }
+  ],
+  "review": {
+    "reviewer": "independent read-only portfolio_ui_release_review",
+    "scope": "7 frontend files main..7f6ac4d; README and portfolio-ui documents; raw browser/test/build evidence",
+    "spec": "APPROVED",
+    "code": "APPROVED",
+    "evidence": "APPROVED",
+    "documentation": "APPROVED",
+    "critical": 0,
+    "important": 0,
+    "minor": 0,
+    "limitations": [
+      "No whole-branch historical review",
+      "No new production preview",
+      "No final shutdown acceptance",
+      "No Chrome fatal acceptance"
+    ]
+  }
+}

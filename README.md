@@ -6,15 +6,17 @@
 
 模拟矿山中的三车实时监控与历史回放：统一仿真时钟、完整车队快照、有界异步录制，以及可独立暂停/跳转的历史展示。不实现自动驾驶控制、真实车辆接入或生产部署。
 
-## 真实运行截图
+## 工业控制台 · 真实运行截图
 
 ### LIVE
-![Real Chrome LIVE view](docs/phase2d-evidence/preview-live.png)
+![Industrial console LIVE in real Chrome](docs/portfolio-ui/live.png)
 
 ### REPLAY
-![Real Chrome historical replay](docs/phase2d-evidence/preview-replay.png)
+![Industrial console REPLAY in real Chrome](docs/portfolio-ui/replay.png)
 
-以上为真实Chrome/Cesium验收原图，非生成图。截图是近景和局部面板，不代表同屏能看到全部车辆；16个Entity和动态行为由真实对象及运行记录核验。
+以上为新版UI在真实Chrome/Cesium中的截图，非生成图或Phase2D旧截图。顶栏、车辆侧栏、历史工作台和缩放灵敏度滑条均可交互；滑条范围0.25×–10.00×，默认10.00×，数值越大缩放越快。截图为局部视角，16个Entity及资源所有权由实际对象核验。
+
+[新版UI验收与范围](docs/portfolio-ui/validation.md) · [新版UI样本](docs/portfolio-ui/browser-samples.json) · [当前交付manifest](docs/portfolio-ui/manifest.json)。原[Phase2D LIVE截图](docs/phase2d-evidence/preview-live.png)、[REPLAY截图](docs/phase2d-evidence/preview-replay.png)及原报告全部保留。
 
 ## 功能与工程重点
 
@@ -80,7 +82,7 @@ $env:PHASE2D_HISTORY_MAX_DB_BYTES = '536870912'
 
 额度须显式设置，至少16777216 bytes且为4096的整数倍。**512MiB只是本地验收配置，不是生产默认**；无有效配置为`DISABLED_CONFIG`，LIVE仍可用但不录制。额度约束主DB，不是目录、WAL/journal或磁盘总占用上限。没有自动删历史功能。
 
-可选`PHASE2D_CODE_REVISION`仅接受40位Git提交标识，省略则记录null；本目录尚无独立提交时，不要把旧私有SHA冒充本次运行提交。
+可选`PHASE2D_CODE_REVISION`仅接受40位Git提交标识，省略则记录null；需要版本标识时使用实际运行checkout的`git rev-parse HEAD`，不要把旧私有SHA冒充当前运行提交。
 
 ### 2. 前端和录制观测
 
@@ -133,33 +135,29 @@ preview也使用5173，不能与dev同时占用。构建从安装的Cesium复制
 |---|---|
 | runtime_source_head | `39907ad226a41f19a72fd8b5ce3d18ed7e1c9e3c` |
 | export_source_commit | `c345b0e6f10983d0e7713d65be4b9ea6250b80c7` |
-| public_repository_commit | 当前null，待独立仓库实际初始化并提交后生成 |
+| 初始作品集提交 | `d60fd8dac8a7f9df63d679c4b58d347ecb2b07ed` |
+| 新版UI运行/测试提交 | `7f6ac4dacb6c236d582fbaff1d7fa83b2bf3c8cf` |
+| 文档交付提交 | 由当前分支`git log -1`识别；不在manifest内自引用 |
 
-旧SHA只是来源标识，不能在本独立公开仓库直接检出。公开文档为原验收材料的编辑副本，不是新增运行测试。
+原私有runtime/export SHA只是来源标识，不能在本独立仓库直接检出。初始作品集提交与新版UI提交则属于本仓库历史。旧manifest中的null和PREPARED状态保留为当时记录，不代表当前Git状态。
 
 既有结果：后端813项、前端1141项通过；SQLite260条快照、真实Chrome/WebGL2和Production Preview。D1为两次Chrome累计10组完整往返，不是单进程连续10组。受控缺口不是生产录制；写失败注入不代表实际耗尽512MiB。
 
 完整数据库、HTTP/WS/CDP和私有审查档案未交付。公开样本保留原摘要及来源ID，可复核精选材料，不能仅凭公开副本重做全部原始调查。
 
-### 文件完整性（只读）
+### 文件完整性：历史与当前交付分开校验
 
-在项目根目录用本地Python3.12执行以下Python代码，不运行程序回归：
+旧`docs/phase2d-evidence/manifest.json`的94项哈希对应初始作品集提交`d60fd8d…`，不能直接用于修改后的UI工作树。原manifest和原截图没有重签或改写。
 
-```python
-from pathlib import Path
-import hashlib, json
-root = Path('.')
-m = json.loads((root/'docs/phase2d-evidence/manifest.json').read_text(encoding='utf-8'))
-for e in m['files']:
-    data = (root/e['path']).read_bytes()
-    if e['hash_mode'] == 'utf8-crlf-to-lf':
-        data = data.replace(b'\r\n', b'\n')
-    assert len(data) == e['bytes'], e['path']
-    assert hashlib.sha256(data).hexdigest() == e['sha256'], e['path']
-print('PASS:', len(m['files']), 'files; manifest itself excluded')
+当前交付使用独立`docs/portfolio-ui/manifest.json`。在仓库根目录执行：
+
+```powershell
+python docs/portfolio-ui/verify.py
 ```
 
-manifest不自引用SHA；未来用公开仓库实际Git提交确定其身份。修改公开文件后需重算摘要。
+脚本只读核验历史Git blob，再核验当前文件及清单，不checkout、不联网。两个manifest均不自哈希。公开副本未交付的私有数据库和日志仍无法仅凭截图完全重做调查。
+
+新版UI本轮前端1152项通过，TypeScript/production build通过；Chrome实测为开发服务中的LIVE、REPLAY、模式切换、相机、滑条及三种视口。原后端813项和Phase2D production preview是历史证据，未在这轮重新执行。三项保留风险不因UI更新而关闭。
 
 ## 已知限制与保留风险
 

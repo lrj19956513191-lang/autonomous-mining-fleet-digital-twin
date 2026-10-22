@@ -1,0 +1,615 @@
+{
+  "runtime_source_commit": "7f6ac4dacb6c236d582fbaff1d7fa83b2bf3c8cf",
+  "browser": "Chrome/155.0.8059.40",
+  "runtime_kind": "Vite development server / real Chrome / real Cesium WebGL",
+  "history_kind": "Independent real five-second UI acceptance recording; not original Phase2D acceptance database",
+  "layouts": [
+    {
+      "mode": "LIVE",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.4134521484375,
+        "height": 67.99903106689453,
+        "scrollWidth": 1920,
+        "clientWidth": 1920
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 67.99903106689453,
+        "width": 319.9935302734375,
+        "height": 1012.1043701171875,
+        "scrollWidth": 319,
+        "clientWidth": 319
+      },
+      "scene": {
+        "x": 319.9935302734375,
+        "y": 67.99903106689453,
+        "width": 1600.419921875,
+        "height": 1012.1043701171875,
+        "scrollWidth": 1600,
+        "clientWidth": 1600
+      },
+      "canvas": {
+        "x": 319.9935302734375,
+        "y": 107.99418640136719,
+        "width": 1600.419921875,
+        "height": 944.1134033203125,
+        "scrollWidth": 1600,
+        "clientWidth": 1600
+      },
+      "visibility": "visible",
+      "slider": {
+        "inside": true,
+        "width": 189.9951629638672
+      }
+    },
+    {
+      "mode": "LIVE",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1366.4083251953125,
+        "height": 67.99903106689453,
+        "scrollWidth": 1366,
+        "clientWidth": 1366
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 67.99903106689453,
+        "width": 319.9935302734375,
+        "height": 700.4764404296875,
+        "scrollWidth": 319,
+        "clientWidth": 319
+      },
+      "scene": {
+        "x": 319.9935302734375,
+        "y": 67.99903106689453,
+        "width": 1046.414794921875,
+        "height": 700.4764404296875,
+        "scrollWidth": 1046,
+        "clientWidth": 1046
+      },
+      "canvas": {
+        "x": 319.9935302734375,
+        "y": 107.99418640136719,
+        "width": 1046.414794921875,
+        "height": 632.4854736328125,
+        "scrollWidth": 1046,
+        "clientWidth": 1046
+      },
+      "visibility": "visible",
+      "slider": {
+        "inside": true,
+        "width": 189.9951629638672
+      }
+    },
+    {
+      "mode": "LIVE",
+      "viewport": [
+        480,
+        900
+      ],
+      "document": [
+        465,
+        1171
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 465.11627197265625,
+        "height": 100,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 100,
+        "width": 465.11627197265625,
+        "height": 486.1353454589844,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "scene": {
+        "x": 0,
+        "y": 586.1353149414062,
+        "width": 465.11627197265625,
+        "height": 585.1663818359375,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "canvas": {
+        "x": 0,
+        "y": 626.1304931640625,
+        "width": 465.11627197265625,
+        "height": 517.1754150390625,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "visibility": "visible",
+      "slider": {
+        "inside": true,
+        "width": 189.9951629638672
+      }
+    },
+    {
+      "mode": "REPLAY",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.4134521484375,
+        "height": 67.99903106689453,
+        "scrollWidth": 1920,
+        "clientWidth": 1920
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 67.99903106689453,
+        "width": 319.9935302734375,
+        "height": 1012.1043701171875,
+        "scrollWidth": 319,
+        "clientWidth": 319
+      },
+      "scene": {
+        "x": 319.9935302734375,
+        "y": 67.99903106689453,
+        "width": 1600.419921875,
+        "height": 1012.1043701171875,
+        "scrollWidth": 1600,
+        "clientWidth": 1600
+      },
+      "canvas": {
+        "x": 319.9935302734375,
+        "y": 107.99418640136719,
+        "width": 1600.419921875,
+        "height": 944.1134033203125,
+        "scrollWidth": 1600,
+        "clientWidth": 1600
+      },
+      "visibility": "hidden",
+      "slider": {
+        "inside": true,
+        "width": 189.9951629638672
+      }
+    },
+    {
+      "mode": "REPLAY",
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1366.4083251953125,
+        "height": 67.99903106689453,
+        "scrollWidth": 1366,
+        "clientWidth": 1366
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 67.99903106689453,
+        "width": 319.9935302734375,
+        "height": 700.4764404296875,
+        "scrollWidth": 319,
+        "clientWidth": 319
+      },
+      "scene": {
+        "x": 319.9935302734375,
+        "y": 67.99903106689453,
+        "width": 1046.414794921875,
+        "height": 700.4764404296875,
+        "scrollWidth": 1046,
+        "clientWidth": 1046
+      },
+      "canvas": {
+        "x": 319.9935302734375,
+        "y": 107.99418640136719,
+        "width": 1046.414794921875,
+        "height": 632.4854736328125,
+        "scrollWidth": 1046,
+        "clientWidth": 1046
+      },
+      "visibility": "visible",
+      "slider": {
+        "inside": true,
+        "width": 189.9951629638672
+      }
+    },
+    {
+      "mode": "REPLAY",
+      "viewport": [
+        480,
+        900
+      ],
+      "document": [
+        465,
+        1171
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 465.11627197265625,
+        "height": 100,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 100,
+        "width": 465.11627197265625,
+        "height": 486.1353454589844,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "scene": {
+        "x": 0,
+        "y": 586.1353149414062,
+        "width": 465.11627197265625,
+        "height": 585.1663818359375,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "canvas": {
+        "x": 0,
+        "y": 626.1304931640625,
+        "width": 465.11627197265625,
+        "height": 517.1754150390625,
+        "scrollWidth": 465,
+        "clientWidth": 465
+      },
+      "visibility": "visible",
+      "slider": {
+        "inside": true,
+        "width": 189.9951629638672
+      }
+    }
+  ],
+  "ownership": [
+    {
+      "captured_viewers": 2,
+      "destroyed": [
+        true,
+        false
+      ],
+      "active_viewers": 1,
+      "fleet_websockets": 1,
+      "canvases": 1,
+      "phase": "strictmode-live",
+      "zoom_widgets": 1
+    },
+    {
+      "captured_viewers": 2,
+      "destroyed": [
+        true,
+        false
+      ],
+      "active_viewers": 1,
+      "fleet_websockets": 1,
+      "canvases": 1,
+      "phase": "collapsed-live",
+      "zoom_widgets": 1
+    },
+    {
+      "captured_viewers": 3,
+      "destroyed": [
+        true,
+        true,
+        false
+      ],
+      "active_viewers": 1,
+      "fleet_websockets": 0,
+      "canvases": 1,
+      "phase": "replay",
+      "zoom_widgets": 1
+    },
+    {
+      "captured_viewers": 4,
+      "destroyed": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "active_viewers": 1,
+      "fleet_websockets": 1,
+      "canvases": 1,
+      "phase": "return-live",
+      "zoom_widgets": 1
+    }
+  ],
+  "interactions": {
+    "native_zoom_slider": [
+      {
+        "key": "ArrowLeft",
+        "ui": {
+          "value": 9.75,
+          "text": "9.75×",
+          "display": "9.75×"
+        },
+        "actual_zoom_factor": 9.75
+      },
+      {
+        "key": "Home",
+        "ui": {
+          "value": 0.25,
+          "text": "0.25×",
+          "display": "0.25×"
+        },
+        "actual_zoom_factor": 0.25
+      },
+      {
+        "key": "End",
+        "ui": {
+          "value": 10,
+          "text": "10.00×",
+          "display": "10.00×"
+        },
+        "actual_zoom_factor": 10
+      }
+    ],
+    "stop_tracking": {
+      "position_m": 0.0,
+      "direction_rad": 2.2607700092365553e-15,
+      "up_rad": 1.0358421028410385e-15,
+      "frustum_equal": true
+    },
+    "three_live_updates": [
+      {
+        "sequence": "SEQ 168",
+        "camera_difference": {
+          "position_m": 0.0,
+          "direction_rad": 0.0,
+          "up_rad": 1.0066561058348072e-14,
+          "frustum_equal": true
+        },
+        "entity_position_identity_stable": true
+      },
+      {
+        "sequence": "SEQ 169",
+        "camera_difference": {
+          "position_m": 0.0,
+          "direction_rad": 0.0,
+          "up_rad": 1.074132834759704e-14,
+          "frustum_equal": true
+        },
+        "entity_position_identity_stable": true
+      },
+      {
+        "sequence": "SEQ 170",
+        "camera_difference": {
+          "position_m": 0.0,
+          "direction_rad": 0.0,
+          "up_rad": 1.1387781308505285e-14,
+          "frustum_equal": true
+        },
+        "entity_position_identity_stable": true
+      }
+    ],
+    "replay_play_pause_rate_seek_selection_locate": true
+  },
+  "screenshots": [
+    {
+      "path": "live.png",
+      "mode": "LIVE",
+      "sequence_label": "SEQ 170",
+      "entities": 16,
+      "zoom_factor": 10,
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "replay.png",
+      "mode": "REPLAY",
+      "session_id": "d11cb135-4d67-49cb-9e90-a025d5a94bf3",
+      "sequence": 2,
+      "simulation_time_seconds": 2,
+      "viewport": [
+        1920,
+        1080
+      ],
+      "entities": 16,
+      "zoom_factor": 10
+    }
+  ],
+  "webgl": {
+    "webgl2": true,
+    "lost": false
+  },
+  "history_session": {
+    "session_id": "d11cb135-4d67-49cb-9e90-a025d5a94bf3",
+    "state": "COMPLETED",
+    "started_utc": "2026-10-22T15:29:31.509858+00:00",
+    "ended_utc": "2026-10-22T15:29:36.648125+00:00",
+    "snapshot_count": 6,
+    "last_sequence": 5,
+    "first_simulation_time": 0.0,
+    "last_simulation_time": 5.0,
+    "failure_code": null,
+    "failure_message": null,
+    "first_sequence": 0,
+    "incomplete": false,
+    "storage_version": 1,
+    "fleet_schema_version": 1,
+    "code_revision": "7f6ac4dacb6c236d582fbaff1d7fa83b2bf3c8cf",
+    "scene_sha256": "634ef2393d48b9d7ffdfac49bbb96716bdc4332e926c781888d808e5c11a7046",
+    "config_sha256": "8794dc54df34bf60c92d86d6348a340a88e3d0a894c6769420e44d0f3c4ba9f8",
+    "vehicle_configs": [
+      {
+        "cruise_speed_kmh": 25.0,
+        "initial_progress_fraction": 0.0,
+        "initial_soc": 90.0,
+        "load": 65.0,
+        "parking": null,
+        "route_id": "ROUTE_001",
+        "soc_rate": 0.1,
+        "vehicle_id": "TRUCK_001"
+      },
+      {
+        "cruise_speed_kmh": 25.0,
+        "initial_progress_fraction": 0.3333333333333333,
+        "initial_soc": 80.0,
+        "load": 40.0,
+        "parking": {
+          "duration_seconds": 15.0,
+          "period_seconds": 120.0,
+          "start_seconds": 60.0
+        },
+        "route_id": "ROUTE_001",
+        "soc_rate": 0.1,
+        "vehicle_id": "TRUCK_002"
+      },
+      {
+        "cruise_speed_kmh": 25.0,
+        "initial_progress_fraction": 0.6666666666666666,
+        "initial_soc": 70.0,
+        "load": 80.0,
+        "parking": {
+          "duration_seconds": 20.0,
+          "period_seconds": 120.0,
+          "start_seconds": 90.0
+        },
+        "route_id": "ROUTE_001",
+        "soc_rate": 0.1,
+        "vehicle_id": "TRUCK_003"
+      }
+    ]
+  },
+  "runtime_exceptions": 0,
+  "result": "PASS",
+  "live_screenshot_ws_snapshot": {
+    "schema_version": 1,
+    "session_id": "c7bbef1c-0721-4143-ace2-7a46173c4740",
+    "sequence": 170,
+    "timestamp": "2026-10-22T15:33:18.595252+00:00",
+    "simulation_time_seconds": 170.0,
+    "vehicles": [
+      {
+        "vehicle_id": "TRUCK_001",
+        "timestamp": "2026-10-22T15:33:18.595252+00:00",
+        "longitude": 116.39193707084088,
+        "latitude": 39.90329370790799,
+        "height": 54.46853555478223,
+        "heading": 262.60296533222873,
+        "speed": 25.0,
+        "soc": 73.00000000000097,
+        "load": 65.0,
+        "status": "running"
+      },
+      {
+        "vehicle_id": "TRUCK_002",
+        "timestamp": "2026-10-22T15:33:18.595252+00:00",
+        "longitude": 116.38608041417682,
+        "latitude": 39.900807008962886,
+        "height": 50.91958700025096,
+        "heading": 162.20751258629056,
+        "speed": 25.0,
+        "soc": 64.50000000000088,
+        "load": 40.0,
+        "status": "running"
+      },
+      {
+        "vehicle_id": "TRUCK_003",
+        "timestamp": "2026-10-22T15:33:18.595252+00:00",
+        "longitude": 116.39309825020106,
+        "latitude": 39.89900982585301,
+        "height": 52.04912523632732,
+        "heading": 82.60190086371982,
+        "speed": 25.0,
+        "soc": 55.00000000000021,
+        "load": 80.0,
+        "status": "running"
+      }
+    ]
+  },
+  "replay_seek_http_snapshot": {
+    "schema_version": 1,
+    "sequence": 2,
+    "session_id": "d11cb135-4d67-49cb-9e90-a025d5a94bf3",
+    "simulation_time_seconds": 2.0,
+    "timestamp": "2026-10-22T15:29:33.558079+00:00",
+    "vehicles": [
+      {
+        "heading": 124.7002494166505,
+        "height": 50.08901418561098,
+        "latitude": 39.89992878944262,
+        "load": 65.0,
+        "longitude": 116.39013352269284,
+        "soc": 89.80000000000001,
+        "speed": 25.0,
+        "status": "running",
+        "timestamp": "2026-10-22T15:29:33.558079+00:00",
+        "vehicle_id": "TRUCK_001"
+      },
+      {
+        "heading": 322.397585875539,
+        "height": 55.05861649864237,
+        "latitude": 39.90158792529399,
+        "load": 40.0,
+        "longitude": 116.39591207705685,
+        "soc": 79.80000000000001,
+        "speed": 25.0,
+        "status": "running",
+        "timestamp": "2026-10-22T15:29:33.558079+00:00",
+        "vehicle_id": "TRUCK_002"
+      },
+      {
+        "heading": 252.01664503476843,
+        "height": 52.588371805627425,
+        "latitude": 39.90279419008484,
+        "load": 80.0,
+        "longitude": 116.38817674009054,
+        "soc": 69.80000000000001,
+        "speed": 25.0,
+        "status": "running",
+        "timestamp": "2026-10-22T15:29:33.558079+00:00",
+        "vehicle_id": "TRUCK_003"
+      }
+    ]
+  },
+  "test_result": {
+    "command": "npm.cmd --prefix frontend test",
+    "passed": 1152,
+    "test_files": 23,
+    "exit_code": 0,
+    "source_commit": "7f6ac4dacb6c236d582fbaff1d7fa83b2bf3c8cf"
+  },
+  "build_result": {
+    "command": "npm.cmd --prefix frontend run build",
+    "exit_code": 0,
+    "typecheck": "tsc --noEmit",
+    "source_commit": "7f6ac4dacb6c236d582fbaff1d7fa83b2bf3c8cf",
+    "browser_runtime_was_production_preview": false
+  },
+  "private_logs_not_delivered": true
+}
